@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Dubai'de Padel Tenisi Yatırımı - Detaylı Fizibilite Raporu | Mayıs 2026" />
+<title>Dubai Padel · Fizibilite Raporu 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0d0b;
+    --bg-2: #0f1311;
+    --surface: #141a16;
+    --surface-2: #1b221d;
+    --line: #232a25;
+    --line-2: #2d362f;
+    --text: #f0ebe1;
+    --text-2: #b9b3a4;
+    --text-3: #7a7568;
+    --gold: #d4a574;
+    --gold-2: #b8895a;
+    --green: #4ade80;
+    --green-2: #22c55e;
+    --green-dim: #15803d;
+    --red: #ef4444;
+    --amber: #f59e0b;
+    --display: 'Bricolage Grotesque', serif;
+    --body: 'Manrope', system-ui, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body);
+    font-weight: 400;
+    line-height: 1.55;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Background grain */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  }
+
+  ::selection { background: var(--gold); color: var(--bg); }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+  .narrow { max-width: 820px; }
+
+  /* ============ NAV ============ */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    padding: 18px 0; z-index: 100;
+    background: rgba(10, 13, 11, 0.7);
+    backdrop-filter: blur(14px) saturate(120%);
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+  }
+  nav.scrolled { border-bottom-color: var(--line); }
+  nav .container { display: flex; justify-content: space-between; align-items: center; }
+  .logo {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .logo-mark {
+    width: 28px; height: 28px;
+    border: 1.5px solid var(--gold);
+    border-radius: 50%;
+    display: grid; place-items: center;
+    position: relative;
+  }
+  .logo-mark::before {
+    content: ''; position: absolute;
+    width: 60%; height: 1px; background: var(--gold);
+    transform: rotate(-30deg);
+  }
+  .logo-mark::after {
+    content: ''; position: absolute;
+    width: 4px; height: 4px; background: var(--green);
+    border-radius: 50%; top: 4px; right: 4px;
+  }
+  nav ul {
+    display: flex; gap: 34px; list-style: none;
+    font-size: 13px; color: var(--text-2);
+    font-weight: 500;
+  }
+  nav a { color: inherit; text-decoration: none; transition: color 0.2s; position: relative; }
+  nav a:hover { color: var(--gold); }
+  nav a::after {
+    content: ''; position: absolute; bottom: -4px; left: 0;
+    width: 0; height: 1px; background: var(--gold);
+    transition: width 0.25s ease;
+  }
+  nav a:hover::after { width: 100%; }
+  @media (max-width: 820px) { nav ul { display: none; } }
+
+  /* ============ HERO ============ */
+  .hero {
+    min-height: 100vh;
+    padding: 140px 0 80px;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 10%; right: -10%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.15) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 18s ease-in-out infinite;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 5%; left: -10%;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(74, 222, 128, 0.08) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: float 22s ease-in-out infinite reverse;
+  }
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(40px, -30px); }
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.2s forwards;
+  }
+  .eyebrow::before {
+    content: ''; width: 32px; height: 1px; background: var(--gold);
+  }
+
+  h1.hero-title {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(48px, 8vw, 112px);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    margin-bottom: 36px;
+    opacity: 0;
+    animation: fadeUp 0.9s 0.35s forwards;
+  }
+  h1.hero-title .accent {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 300;
+  }
+  h1.hero-title .accent-2 {
+    color: var(--green);
+    font-weight: 500;
+  }
+
+  .hero-sub {
+    font-size: clamp(17px, 2vw, 21px);
+    color: var(--text-2);
+    max-width: 640px;
+    line-height: 1.55;
+    margin-bottom: 64px;
+    opacity: 0;
+    animation: fadeUp 0.9s 0.55s forwards;
+  }
+
+  .hero-meta {
+    display: flex; gap: 56px; flex-wrap: wrap;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    opacity: 0;
+    animation: fadeUp 0.9s 0.75s forwards;
+  }
+  .meta-item .label {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-3);
+    margin-bottom: 8px;
+  }
+  .meta-item .value {
+    font-family: var(--display);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ============ VERDICT BANNER ============ */
+  .verdict-banner {
+    padding: 60px 0;
+    background: linear-gradient(135deg, rgba(212, 165, 116, 0.08), rgba(74, 222, 128, 0.05));
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    position: relative;
+  }
+  .verdict-banner .container {
+    display: grid; grid-template-columns: auto 1fr auto; gap: 40px; align-items: center;
+  }
+  .verdict-stamp {
+    font-family: var(--display);
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1;
+    color: var(--gold);
+    letter-spacing: -0.02em;
+  }
+  .verdict-stamp .check {
+    font-family: var(--body);
+    font-style: normal;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .verdict-text {
+    font-size: 17px;
+    color: var(--text-2);
+    line-height: 1.5;
+    max-width: 600px;
+  }
+  .verdict-text strong { color: var(--text); font-weight: 600; }
+  .verdict-cta {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-3);
+    text-align: right;
+  }
+  @media (max-width: 820px) {
+    .verdict-banner .container { grid-template-columns: 1fr; gap: 20px; }
+    .verdict-cta { text-align: left; }
+  }
+
+  /* ============ SECTIONS ============ */
+  section { padding: 120px 0; position: relative; }
+
+  .section-header {
+    display: grid; grid-template-columns: auto 1fr; gap: 60px;
+    margin-bottom: 80px;
+    align-items: end;
+  }
+  @media (max-width: 820px) {
+    .section-header { grid-template-columns: 1fr; gap: 20px; }
+  }
+  .section-num {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    border-left: 1px solid var(--gold);
+    padding: 0 0 20px 8px;
+    margin-left: 14px;
+  }
+  @media (max-width: 820px) {
+    .section-num { writing-mode: horizontal-tb; transform: none; border-left: none; border-top: 1px solid var(--gold); padding: 8px 0 0 0; margin-left: 0; }
+  }
+  .section-title-block h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+  }
+  .section-title-block h2 em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 300;
+  }
+  .section-title-block .lede {
+    color: var(--text-2);
+    font-size: 17px;
+    max-width: 600px;
+    line-height: 1.55;
+  }
+
+  /* ============ KEY STATS GRID ============ */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  @media (max-width: 820px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+  .stat-cell {
+    background: var(--bg);
+    padding: 36px 28px;
+    transition: background 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-cell:hover { background: var(--surface); }
+  .stat-cell::after {
+    content: ''; position: absolute; bottom: 0; left: 0;
+    width: 0; height: 2px; background: var(--gold);
+    transition: width 0.4s ease;
+  }
+  .stat-cell:hover::after { width: 100%; }
+  .stat-num {
+    font-family: var(--display);
+    font-size: clamp(36px, 4vw, 52px);
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .stat-num .unit { font-size: 0.45em; color: var(--text-2); margin-left: 4px; font-family: var(--body); font-weight: 500; }
+  .stat-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-3);
+    margin-bottom: 8px;
+  }
+  .stat-desc { font-size: 13px; color: var(--text-2); line-height: 1.4; }
+
+  /* ============ CARDS ============ */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 36px;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .card:hover { border-color: var(--line-2); transform: translateY(-2px); }
+  .card-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .card h3 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  .card p { color: var(--text-2); font-size: 15px; line-height: 1.6; }
+
+  /* Two col layout */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 820px) { .two-col { grid-template-columns: 1fr; } }
+
+  /* ============ GROWTH CHART ============ */
+  .chart-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 48px;
+    margin-top: 60px;
+  }
+  .chart-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-3);
+    margin-bottom: 8px;
+  }
+  .chart-subtitle {
+    font-family: var(--display);
+    font-size: 22px;
+    margin-bottom: 36px;
+    color: var(--text);
+  }
+  .bars { display: flex; align-items: flex-end; gap: 14px; height: 240px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .bar-group { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 12px; height: 100%; }
+  .bar {
+    width: 100%;
+    background: linear-gradient(180deg, var(--gold) 0%, var(--gold-2) 100%);
+    position: relative;
+    height: 0;
+    transition: height 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    min-height: 4px;
+  }
+  .bar-group.green .bar { background: linear-gradient(180deg, var(--green) 0%, var(--green-dim) 100%); }
+  .bar-val {
+    position: absolute; top: -28px; left: 50%; transform: translateX(-50%);
+    font-family: var(--mono); font-size: 12px; color: var(--text);
+    white-space: nowrap;
+  }
+  .bar-label {
+    font-family: var(--mono); font-size: 11px;
+    color: var(--text-3);
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  /* ============ COMPETITION TABLE ============ */
+  .table-wrap { overflow-x: auto; margin-top: 40px; border: 1px solid var(--line); }
+  table.comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 700px;
+  }
+  .comp-table th {
+    text-align: left;
+    padding: 18px 20px;
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    font-weight: 500;
+  }
+  .comp-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--line);
+    color: var(--text-2);
+    vertical-align: top;
+  }
+  .comp-table tr:hover td { background: var(--surface); color: var(--text); }
+  .comp-table .name { color: var(--text); font-weight: 600; font-family: var(--display); font-size: 15px; }
+  .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .tag.indoor { background: rgba(74, 222, 128, 0.1); color: var(--green); }
+  .tag.outdoor { background: rgba(245, 158, 11, 0.1); color: var(--amber); }
+  .tag.mix { background: rgba(212, 165, 116, 0.1); color: var(--gold); }
+
+  /* ============ DEMOGRAPHICS ============ */
+  .demo-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+  @media (max-width: 820px) { .demo-grid { grid-template-columns: 1fr; } }
+
+  .donut-wrap { text-align: center; padding: 20px; }
+  .donut {
+    width: 180px; height: 180px; margin: 0 auto 20px;
+    position: relative;
+  }
+  .donut svg { transform: rotate(-90deg); width: 100%; height: 100%; }
+  .donut circle { fill: none; stroke-width: 12; }
+  .donut .center {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .donut .center .big {
+    font-family: var(--display); font-size: 32px; font-weight: 500; color: var(--gold);
+    line-height: 1;
+  }
+  .donut .center .small {
+    font-family: var(--mono); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--text-3); margin-top: 6px;
+  }
+  .legend {
+    display: flex; flex-direction: column; gap: 8px;
+    font-size: 13px;
+  }
+  .legend-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--line); }
+  .legend-row:last-child { border-bottom: none; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 8px; vertical-align: middle; }
+  .legend-label { color: var(--text-2); }
+  .legend-val { font-family: var(--mono); color: var(--text); font-weight: 500; font-size: 12px; }
+
+  /* ============ REGION COMPARISON ============ */
+  .region-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .region-card.recommended { border-color: var(--green-dim); }
+  .region-card.recommended::before {
+    content: 'TAVSİYE';
+    position: absolute; top: 18px; right: 18px;
+    font-family: var(--mono); font-size: 9px;
+    background: var(--green); color: var(--bg);
+    padding: 4px 8px; letter-spacing: 0.1em; font-weight: 600;
+  }
+  .region-card.warning { border-color: var(--line); }
+  .region-card.warning::before {
+    content: 'DOYMUŞ';
+    position: absolute; top: 18px; right: 18px;
+    font-family: var(--mono); font-size: 9px;
+    background: var(--red); color: var(--bg);
+    padding: 4px 8px; letter-spacing: 0.1em; font-weight: 600;
+  }
+  .region-card h3 {
+    font-family: var(--display);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .region-card .sub { font-family: var(--mono); font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px; }
+  .meter-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px; font-size: 13px; }
+  .meter-row .label { color: var(--text-2); white-space: nowrap; }
+  .meter-bar { flex: 1; height: 6px; background: var(--bg); position: relative; max-width: 140px; }
+  .meter-fill { position: absolute; top: 0; left: 0; height: 100%; background: var(--gold); transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1); width: 0; }
+  .meter-fill.green { background: var(--green); }
+  .meter-fill.red { background: var(--red); }
+  .meter-val { font-family: var(--mono); font-size: 12px; color: var(--text); min-width: 40px; text-align: right; }
+  .region-card .verdict {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--text-2);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ============ COST BREAKDOWN ============ */
+  .cost-section {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+    margin-bottom: 60px;
+  }
+  @media (max-width: 820px) { .cost-section { grid-template-columns: 1fr; gap: 40px; } }
+
+  .cost-block h3 {
+    font-family: var(--display);
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .cost-block .cost-total {
+    font-family: var(--display);
+    font-size: 56px;
+    color: var(--gold);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    margin: 24px 0 8px;
+    line-height: 1;
+  }
+  .cost-block .cost-total .currency { font-size: 0.45em; color: var(--text-2); margin-left: 8px; font-family: var(--body); font-weight: 500; }
+  .cost-block .cost-sub {
+    font-family: var(--mono); font-size: 12px;
+    color: var(--text-3);
+    margin-bottom: 28px;
+  }
+  .cost-list { list-style: none; }
+  .cost-list li {
+    display: flex; justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+  }
+  .cost-list li .name { color: var(--text-2); flex: 1; padding-right: 16px; }
+  .cost-list li .val { font-family: var(--mono); color: var(--text); white-space: nowrap; }
+
+  /* ============ ROI TIMELINE ============ */
+  .timeline-wrap { margin-top: 60px; position: relative; padding-left: 0; }
+  .timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    position: relative;
+  }
+  @media (max-width: 820px) { .timeline-grid { grid-template-columns: 1fr; } }
+  .timeline-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 32px;
+    position: relative;
+  }
+  .timeline-card::before {
+    content: ''; position: absolute; top: 0; left: 0;
+    width: 100%; height: 3px;
+  }
+  .timeline-card.yr1::before { background: var(--red); }
+  .timeline-card.yr2::before { background: var(--amber); }
+  .timeline-card.yr3::before { background: var(--green); }
+  .yr-label {
+    font-family: var(--mono); font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--text-3); margin-bottom: 12px;
+  }
+  .yr-title {
+    font-family: var(--display); font-size: 26px;
+    font-weight: 500; margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+  .yr-metric { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .yr-metric:last-child { border-bottom: none; }
+  .yr-metric .k { color: var(--text-2); }
+  .yr-metric .v { font-family: var(--mono); color: var(--text); }
+  .yr-metric .v.neg { color: var(--red); }
+  .yr-metric .v.pos { color: var(--green); }
+
+  /* ============ RISK GRID ============ */
+  .risk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  @media (max-width: 820px) { .risk-grid { grid-template-columns: 1fr; } }
+  .risk-cell {
+    background: var(--bg);
+    padding: 32px;
+    position: relative;
+  }
+  .risk-level {
+    display: inline-block;
+    font-family: var(--mono); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    padding: 4px 10px; margin-bottom: 16px;
+    border: 1px solid;
+  }
+  .risk-level.high { color: var(--red); border-color: rgba(239, 68, 68, 0.4); }
+  .risk-level.med { color: var(--amber); border-color: rgba(245, 158, 11, 0.4); }
+  .risk-level.low { color: var(--green); border-color: rgba(74, 222, 128, 0.4); }
+  .risk-cell h4 { font-family: var(--display); font-size: 20px; font-weight: 500; margin-bottom: 12px; }
+  .risk-cell p { color: var(--text-2); font-size: 14px; line-height: 1.55; margin-bottom: 12px; }
+  .risk-cell .mitigation {
+    border-top: 1px solid var(--line);
+    padding-top: 12px;
+    font-size: 13px;
+    color: var(--text-2);
+  }
+  .risk-cell .mitigation strong { color: var(--gold); font-family: var(--mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 6px; font-weight: 500; }
+
+  /* ============ ROADMAP ============ */
+  .roadmap { position: relative; padding-left: 40px; }
+  .roadmap::before {
+    content: ''; position: absolute;
+    top: 0; bottom: 0; left: 8px;
+    width: 1px; background: var(--line);
+  }
+  .roadmap-item { position: relative; padding-bottom: 48px; }
+  .roadmap-item:last-child { padding-bottom: 0; }
+  .roadmap-item::before {
+    content: ''; position: absolute;
+    left: -38px; top: 4px;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--gold);
+  }
+  .roadmap-item.done::before { background: var(--green); border-color: var(--green); }
+  .road-time {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .road-title { font-family: var(--display); font-size: 22px; font-weight: 500; margin-bottom: 10px; }
+  .road-desc { color: var(--text-2); font-size: 15px; line-height: 1.6; max-width: 720px; }
+
+  /* ============ FINAL VERDICT ============ */
+  .final {
+    padding: 140px 0;
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+    border-top: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+  .final::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: 50%; transform: translateX(-50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(212, 165, 116, 0.1) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .final-stamp {
+    text-align: center;
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(80px, 14vw, 180px);
+    line-height: 0.9;
+    color: var(--gold);
+    letter-spacing: -0.05em;
+    margin-bottom: 32px;
+  }
+  .final-stamp .comma { color: var(--text); font-style: normal; }
+  .final-sub {
+    text-align: center;
+    font-size: 20px;
+    color: var(--text-2);
+    max-width: 720px;
+    margin: 0 auto 60px;
+    line-height: 1.5;
+  }
+  .conditions {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 900px; margin: 0 auto;
+  }
+  @media (max-width: 820px) { .conditions { grid-template-columns: 1fr; } }
+  .cond-block {
+    padding: 32px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .cond-block.yes { border-top: 3px solid var(--green); }
+  .cond-block.no { border-top: 3px solid var(--red); }
+  .cond-block h4 {
+    font-family: var(--display);
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .cond-block ul { list-style: none; }
+  .cond-block li {
+    padding: 10px 0 10px 22px;
+    border-bottom: 1px solid var(--line);
+    color: var(--text-2);
+    font-size: 14px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .cond-block li:last-child { border-bottom: none; }
+  .cond-block.yes li::before {
+    content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: 700;
+  }
+  .cond-block.no li::before {
+    content: '✕'; position: absolute; left: 0; color: var(--red); font-weight: 700;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    padding: 60px 0 40px;
+    background: var(--bg-2);
+    border-top: 1px solid var(--line);
+    color: var(--text-3);
+    font-size: 13px;
+  }
+  footer .container { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 820px) { footer .container { grid-template-columns: 1fr; } }
+  footer h5 { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); margin-bottom: 16px; font-weight: 500; }
+  footer p { margin-bottom: 8px; line-height: 1.6; }
+  .footer-disclaimer { font-size: 12px; color: var(--text-3); margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); line-height: 1.6; }
+
+  /* ============ ANIMATIONS ============ */
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1); }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .reveal-stagger > * { opacity: 0; transform: translateY(20px); transition: opacity 0.8s, transform 0.8s; }
+  .reveal-stagger.in > * { opacity: 1; transform: translateY(0); }
+  .reveal-stagger.in > *:nth-child(1) { transition-delay: 0s; }
+  .reveal-stagger.in > *:nth-child(2) { transition-delay: 0.08s; }
+  .reveal-stagger.in > *:nth-child(3) { transition-delay: 0.16s; }
+  .reveal-stagger.in > *:nth-child(4) { transition-delay: 0.24s; }
+  .reveal-stagger.in > *:nth-child(5) { transition-delay: 0.32s; }
+  .reveal-stagger.in > *:nth-child(6) { transition-delay: 0.40s; }
+  .reveal-stagger.in > *:nth-child(7) { transition-delay: 0.48s; }
+  .reveal-stagger.in > *:nth-child(8) { transition-delay: 0.56s; }
+
+  /* ============ DIVIDER ============ */
+  .divider {
+    text-align: center; padding: 40px 0;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.3em; color: var(--text-3);
+    text-transform: uppercase;
+  }
+  .divider::before, .divider::after {
+    content: ''; display: inline-block; width: 60px; height: 1px;
+    background: var(--line); vertical-align: middle; margin: 0 16px;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav id="nav">
+  <div class="container">
+    <div class="logo">
+      <div class="logo-mark"></div>
+      <span>Padel Dubai · 2026</span>
+    </div>
+    <ul>
+      <li><a href="#pazar">Pazar</a></li>
+      <li><a href="#rekabet">Rekabet</a></li>
+      <li><a href="#demografi">Demografi</a></li>
+      <li><a href="#bolge">Bölge</a></li>
+      <li><a href="#maliyet">Maliyet</a></li>
+      <li><a href="#karar">Karar</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <div class="eyebrow">Fizibilite Raporu · Mayıs 2026</div>
+    <h1 class="hero-title">
+      Dubai'de padel,<br>
+      bir <span class="accent">trend</span> mi,<br>
+      yoksa bir <span class="accent-2">iş kolu</span> mu?
+    </h1>
+    <p class="hero-sub">
+      4 kortlu, indoor, karma sosyal kulüp modeli için kapsamlı bir yatırım analizi.
+      Pazar trendleri, 20+ rakip operatör, müşteri demografisi, bölge önerisi, detaylı maliyet/ROI tabloları
+      ve riskleri kapsayan veriye dayalı bir bakış.
+    </p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <div class="label">Pazar Büyümesi (BAE)</div>
+        <div class="value">%40–50<span style="font-size: 0.6em; color: var(--text-3);"> /yıl</span></div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Başlangıç Sermayesi</div>
+        <div class="value">5–6M AED</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">ROI Süresi</div>
+        <div class="value">3–4 yıl</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">Nihai Karar</div>
+        <div class="value" style="color: var(--green);">Koşullu Evet</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ VERDICT BANNER ============ -->
+<div class="verdict-banner">
+  <div class="container">
+    <div class="verdict-stamp"><span class="check" style="color: var(--green);">✓</span>Yapılır</div>
+    <div class="verdict-text">
+      <strong>Evet, yapılır — ama dikkatli ve hızlı yapılmalı.</strong>
+      Dubai padel pazarı hâlâ büyüyor, hükümet 2033 stratejik planında padel'i resmi olarak destekliyor.
+      Ancak Al Quoz başta olmak üzere bazı bölgeler doygunlaşma sinyalleri veriyor.
+      Doğru bölge, doğru konsept ve disiplinli sermaye yönetimi belirleyici.
+    </div>
+    <div class="verdict-cta">
+      8 Bölüm<br>
+      Tüm Detaylar Aşağıda
+    </div>
+  </div>
+</div>
+
+<!-- ============ 1. PAZAR ============ -->
+<section id="pazar">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-num">01 · Pazar</div>
+      <div class="section-title-block">
+        <h2>Hâlâ büyüyen, ancak<br><em>olgunlaşan</em> bir pazar.</h2>
+        <p class="lede">
+          BAE genelinde 950+ kort, 320+ tesis. UAE Padel Association'a göre oyuncu sayısı son üç yıldır yıllık %40-50 büyüyor.
+          Padel artık Sheikh Mansoor bin Mohammed'in Kasım 2025'te lanse ettiği Dubai Sports Sector Strategic Plan 2033'te
+          resmi "Emerging Sports" listesinde.
+        </p>
+      </div>
+    </div>
+
+    <div class="stats-grid reveal">
+      <div class="stat-cell">
+        <div class="stat-label">BAE Kort Sayısı</div>
+        <div class="stat-num" data-count="950" data-suffix="+">0<span class="unit">kort</span></div>
+        <div class="stat-desc">320+ tesiste, yıllık %15+ büyüme ile</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Dubai Kort Sayısı</div>
+        <div class="stat-num" data-count="400" data-suffix="+">0<span class="unit">kort</span></div>
+        <div class="stat-desc">Al Quoz tek başına 13+ tesis</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Yıllık Büyüme (BAE)</div>
+        <div class="stat-num" data-count="45" data-suffix="%">0<span class="unit">/yıl</span></div>
+        <div class="stat-desc">FIP küresel ortalamasının (15-26%) üzerinde</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Küresel Oyuncu</div>
+        <div class="stat-num" data-count="35" data-suffix="M+">0<span class="unit">kişi</span></div>
+        <div class="stat-desc">150 ülke, 77.300 kort (FIP 2025)</div>
+      </div>
+    </div>
+
+    <div class="chart-card reveal">
+      <div class="chart-title">Kort Sayısı Karşılaştırması · 2026</div>
+      <div class="chart-subtitle">Dubai, küresel padel haritasının üst sıralarında.</div>
+      <div class="bars" id="bars">
+        <div class="bar-group" data-pct="100"><div class="bar"><div class="bar-val">950+</div></div><div class="bar-label">BAE<br><span style="color:var(--gold)">Toplam</span></div></div>
+        <div class="bar-group green" data-pct="42"><div class="bar"><div class="bar-val">400+</div></div><div class="bar-label">Dubai</div></div>
+        <div class="bar-group" data-pct="20"><div class="bar"><div class="bar-val">~190</div></div><div class="bar-label">Suudi Arabistan</div></div>
+        <div class="bar-group" data-pct="12"><div class="bar"><div class="bar-val">~120</div></div><div class="bar-label">Katar</div></div>
+        <div class="bar-group" data-pct="8"><div class="bar"><div class="bar-val">~75</div></div><div class="bar-label">Kuveyt</div></div>
+        <div class="bar-group" data-pct="3"><div class="bar"><div class="bar-val">~30</div></div><div class="bar-label">Türkiye</div></div>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top: 40px;" >
+      <div class="card reveal">
+        <div class="card-eyebrow">Pozitif Sinyal</div>
+        <h3>Hükümet desteği güçlü</h3>
+        <p>
+          Dubai Sports Sector Strategic Plan 2033 padel'i "Emerging Sports" kategorisinde 17 öncelikli sporun ilkleri arasına aldı.
+          Spor sektörü GSYİH katkısı 10,17 → 18,3 milyar AED'ye taşınacak. Premier Padel Dubai Hamdan Sports Complex'te
+          art arda iki yıl ev sahipliği yapıyor.
+        </p>
+      </div>
+      <div class="card reveal">
+        <div class="card-eyebrow">Uyarı Sinyali</div>
+        <h3>İsveç balonu hatırlatması</h3>
+        <p>
+          İsveç'te 2022-2025 arası 100+ tesis kapandı, 90 şirket iflas etti, ~€500M sermaye yok oldu.
+          Triton-destekli We Are Padel 63 kulüpten 50'sini kapattı. Dubai'de Al Quoz odaklı aynı patternin
+          tekrarı kaçınılmaz; doğru bölge ve disiplin belirleyici.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">· · ·</div>
+
+<!-- ============ 2. REKABET ============ -->
+<section id="rekabet">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-num">02 · Rekabet</div>
+      <div class="section-title-block">
+        <h2>Saf kort kiralama <em>artık</em> bir model değil.</h2>
+        <p class="lede">
+          20+ büyük operatör pazarda. Kazananlar wellness + F&B + akademi + topluluk modeline geçti.
+          Saatlik 180–615 AED arası fiyatlandırma; üyelik gelir akışı olmayanlar nakit akışı dalgalanmasında zayıf.
+        </p>
+      </div>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Operatör</th>
+            <th>Konum / Kort</th>
+            <th>Tip</th>
+            <th>90dk Fiyat</th>
+            <th>Konsept</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="name">Just Padel</td><td>Mina Rashid, Kite Beach, NAS · 6+ lokasyon</td><td><span class="tag mix">Karma</span></td><td>180–360 AED</td><td>Akademi + turnuva, ölçek lideri</td></tr>
+          <tr><td class="name">Padel Pro UAE</td><td>Jumeirah Park, Al Quoz, One Central · 9 kulüp</td><td><span class="tag mix">Karma</span></td><td>260–360 AED</td><td>Boon Coffee + FILA shop</td></tr>
+          <tr><td class="name">Central Padel</td><td>Al Quoz · 7 indoor</td><td><span class="tag indoor">Indoor</span></td><td>460–615 AED</td><td>WPT-sertifikalı Centre Court, premium</td></tr>
+          <tr><td class="name">Matcha Club</td><td>Al Quoz + Meydan · 12 outdoor</td><td><span class="tag outdoor">Outdoor</span></td><td>400 AED</td><td>NETTE restoran, yoga, pilates</td></tr>
+          <tr><td class="name">The Lob</td><td>Al Quoz · 6 indoor</td><td><span class="tag indoor">Indoor</span></td><td>350–450 AED</td><td>Chef Silvena + infrared sauna</td></tr>
+          <tr><td class="name">Padel One</td><td>DIP · 6 FIP-circuit indoor</td><td><span class="tag indoor">Indoor</span></td><td>Üyelik odaklı</td><td>Sauna + ice bath + yoga, 3 katman üyelik</td></tr>
+          <tr><td class="name">Padel Edition</td><td>Al Quoz 1 · indoor</td><td><span class="tag indoor">Indoor</span></td><td>80–360 AED</td><td>Recovery zone, infrared + ice bath</td></tr>
+          <tr><td class="name">Viya Padel</td><td>Emirates GC, Dubai Creek, JGE · 20+ outdoor</td><td><span class="tag outdoor">Outdoor</span></td><td>360–380 AED</td><td>Dubai Golf grubu, yıllık üyelik</td></tr>
+          <tr><td class="name">Redline Sports</td><td>Al Quoz, Al Barsha (4 indoor), Greens</td><td><span class="tag mix">Karma</span></td><td>70 AED/saat off-peak</td><td>En agresif fiyat; 400 AED/ay unlimited</td></tr>
+          <tr><td class="name">La Cantine SC</td><td>Bluewaters · 6 outdoor (sahil)</td><td><span class="tag outdoor">Outdoor</span></td><td>200+ AED</td><td>Wellness café + retail butik</td></tr>
+          <tr><td class="name">World Padel Academy</td><td>Al Quoz, SIRO One Za'abeel, Hamdan SC</td><td><span class="tag mix">Karma</span></td><td>—</td><td>FIP-onaylı koçlar, Şubat 2026 SIRO açılışı</td></tr>
+          <tr><td class="name">Smash Padel</td><td>Palm Jumeirah, Jebel Ali · indoor</td><td><span class="tag indoor">Indoor</span></td><td>200–360 AED</td><td>Gym kombinasyonu</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top: 32px; font-family: var(--mono); font-size: 12px; color: var(--text-3); letter-spacing: 0.05em;">
+      → Liste temsili; pazar 25+ operatör barındırıyor. Indoor + topluluk + akademi modelini benimseyenler büyüyor.
+    </div>
+  </div>
+</section>
+
+<div class="divider">· · ·</div>
+
+<!-- ============ 3. DEMOGRAFİ ============ -->
+<section id="demografi">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-num">03 · Demografi</div>
+      <div class="section-title-block">
+        <h2>Ekspat-yoğun, varlıklı,<br><em>26-50 yaş</em> bandı.</h2>
+        <p class="lede">
+          Finans, danışmanlık, teknoloji, hukuk profesyonelleri ve aile odaklı kullanıcılar baskın.
+          Marina/JBR, Business Bay, Dubai Hills, Palm Jumeirah'te yaşıyor, Al Quoz/One Central'a 15–25 dk araba mesafesinde.
+          Hafta içi 17:00–23:00 ana yoğunluk.
+        </p>
+      </div>
+    </div>
+
+    <div class="demo-grid reveal">
+      <div class="donut-wrap">
+        <div class="donut">
+          <svg viewBox="0 0 36 36">
+            <circle cx="18" cy="18" r="15.91549" stroke="var(--line)" />
+            <circle cx="18" cy="18" r="15.91549" stroke="var(--gold)" stroke-dasharray="65 100" class="donut-arc" stroke-linecap="butt" />
+          </svg>
+          <div class="center">
+            <div class="big">65%</div>
+            <div class="small">Ekspat</div>
+          </div>
+        </div>
+        <div class="legend">
+          <div class="legend-row"><span><span class="legend-dot" style="background: var(--gold);"></span><span class="legend-label">Ekspat</span></span><span class="legend-val">65%</span></div>
+          <div class="legend-row"><span><span class="legend-dot" style="background: var(--green);"></span><span class="legend-label">Emirati</span></span><span class="legend-val">20%</span></div>
+          <div class="legend-row"><span><span class="legend-dot" style="background: var(--text-3);"></span><span class="legend-label">Diğer</span></span><span class="legend-val">15%</span></div>
+        </div>
+        <div style="font-family: var(--mono); font-size: 10px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 16px;">Milliyet Dağılımı</div>
+      </div>
+
+      <div class="donut-wrap">
+        <div class="donut">
+          <svg viewBox="0 0 36 36">
+            <circle cx="18" cy="18" r="15.91549" stroke="var(--line)" />
+            <circle cx="18" cy="18" r="15.91549" stroke="var(--gold)" stroke-dasharray="60 100" class="donut-arc" stroke-linecap="butt" />
+          </svg>
+          <div class="center">
+            <div class="big">60%</div>
+            <div class="small">Erkek</div>
+          </div>
+        </div>
+        <div class="legend">
+          <div class="legend-row"><span><span class="legend-dot" style="background: var(--gold);"></span><span class="legend-label">Erkek</span></span><span class="legend-val">60%</span></div>
+          <div class="legend-row"><span><span class="legend-dot" style="background: var(--green);"></span><span class="legend-label">Kadın</span></span><span class="legend-val">40%</span></div>
+        </div>
+        <div style="font-family: var(--mono); font-size: 10px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 16px;">Cinsiyet · Küresel Ort.'nın Üzerinde</div>
+      </div>
+
+      <div class="donut-wrap">
+        <div class="donut">
+          <svg viewBox="0 0 36 36">
+            <circle cx="18" cy="18" r="15.91549" stroke="var(--line)" />
+            <circle cx="18" cy="18" r="15.91549" stroke="var(--gold)" stroke-dasharray="70 100" class="donut-arc" stroke-linecap="butt" />
+          </svg>
+          <div class="center">
+            <div class="big">70%</div>
+            <div class="small">25+ yaş</div>
+          </div>
+        </div>
+        <div class="legend">
+          <div class="legend-row"><span><span class="legend-dot" style="background: var(--gold);"></span><span class="legend-label">Çekirdek (26-50)</span></span><span class="legend-val">70%</span></div>
+          <div class="legend-row"><span><span class="legend-dot" style="background: var(--green);"></span><span class="legend-label">18-25</span></span><span class="legend-val">18%</span></div>
+          <div class="legend-row"><span><span class="legend-dot" style="background: var(--text-3);"></span><span class="legend-label">50+</span></span><span class="legend-val">12%</span></div>
+        </div>
+        <div style="font-family: var(--mono); font-size: 10px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 16px;">Yaş Bandı</div>
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top: 60px;">
+      <div class="card reveal">
+        <div class="card-eyebrow">Mesleki Profil</div>
+        <h3>Finans, tech, hukuk, danışmanlık</h3>
+        <p>
+          DIFC çalışanları, executive kadrolar, real estate broker, havayolu mürettebatı, gençleştirilmiş Emirati ailesi.
+          Yüksek harcama gücü, premium üyelik için fiyat hassasiyeti düşük. Sosyal+fitness motivasyonu (%60+), rekabetçi/lig (%25), corporate ve aile (%15).
+        </p>
+      </div>
+      <div class="card reveal">
+        <div class="card-eyebrow">Konum Yoğunluğu</div>
+        <h3>Marina, Hills, Palm, JVC, Business Bay</h3>
+        <p>
+          Hedef demografi ağırlıklı olarak West Dubai'de (Marina–Hills aksı) ve East Dubai'de (Meydan–Mirdif) yaşıyor.
+          Al Quoz'a 15–25 dk uzaklıkta; banliyö tesisleri "yakınlık" avantajı yaratıyor — bu kritik bir fırsat sinyali.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">· · ·</div>
+
+<!-- ============ 4. BÖLGE ============ -->
+<section id="bolge">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-num">04 · Bölge</div>
+      <div class="section-title-block">
+        <h2>Doğru bölge, <em>tüm</em> oyunu değiştirir.</h2>
+        <p class="lede">
+          Al Quoz artık doymuş, fiyat rekabeti sert. Dubai Hills, JVC, Meydan üçgeni "ekspat ağırlıklı orta-üst gelir, halen az kort" pozisyonunda.
+          Marina/Downtown sadece "premium butik" konseptiyle anlamlı.
+        </p>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-bottom: 40px;" class="reveal-stagger">
+      <div class="region-card recommended">
+        <h3>Dubai Hills / Arabian Ranches</h3>
+        <div class="sub">Öncelikli Tercih</div>
+        <div class="meter-row"><span class="label">Demografi Yoğunluğu</span><div class="meter-bar"><div class="meter-fill green" data-w="95"></div></div><span class="meter-val">95</span></div>
+        <div class="meter-row"><span class="label">Mevcut Rekabet</span><div class="meter-bar"><div class="meter-fill green" data-w="30"></div></div><span class="meter-val">30</span></div>
+        <div class="meter-row"><span class="label">Kira Erişilebilirliği</span><div class="meter-bar"><div class="meter-fill" data-w="50"></div></div><span class="meter-val">50</span></div>
+        <div class="meter-row"><span class="label">ROI Potansiyeli</span><div class="meter-bar"><div class="meter-fill green" data-w="90"></div></div><span class="meter-val">90</span></div>
+        <div class="verdict">Üst-orta gelirli ekspat aile yoğunluğu en yüksek. Community retail alanları padel + cafe + yoga konseptine ideal. Kira yıllık 1,2-2M AED.</div>
+      </div>
+
+      <div class="region-card recommended">
+        <h3>JVC / JVT</h3>
+        <div class="sub">İkinci Tercih</div>
+        <div class="meter-row"><span class="label">Demografi Yoğunluğu</span><div class="meter-bar"><div class="meter-fill green" data-w="80"></div></div><span class="meter-val">80</span></div>
+        <div class="meter-row"><span class="label">Mevcut Rekabet</span><div class="meter-bar"><div class="meter-fill green" data-w="20"></div></div><span class="meter-val">20</span></div>
+        <div class="meter-row"><span class="label">Kira Erişilebilirliği</span><div class="meter-bar"><div class="meter-fill green" data-w="80"></div></div><span class="meter-val">80</span></div>
+        <div class="meter-row"><span class="label">ROI Potansiyeli</span><div class="meter-bar"><div class="meter-fill green" data-w="85"></div></div><span class="meter-val">85</span></div>
+        <div class="verdict">Hızlı büyüyen genç ekspat nüfusu. Wellfit dışında ciddi rekabet yok. Kira makul (600k–1M AED). Circle Mall yakını ideal.</div>
+      </div>
+
+      <div class="region-card recommended">
+        <h3>Meydan / Nad Al Sheba</h3>
+        <div class="sub">Üçüncü Tercih</div>
+        <div class="meter-row"><span class="label">Demografi Yoğunluğu</span><div class="meter-bar"><div class="meter-fill green" data-w="75"></div></div><span class="meter-val">75</span></div>
+        <div class="meter-row"><span class="label">Mevcut Rekabet</span><div class="meter-bar"><div class="meter-fill" data-w="45"></div></div><span class="meter-val">45</span></div>
+        <div class="meter-row"><span class="label">Kira Erişilebilirliği</span><div class="meter-bar"><div class="meter-fill" data-w="60"></div></div><span class="meter-val">60</span></div>
+        <div class="meter-row"><span class="label">ROI Potansiyeli</span><div class="meter-bar"><div class="meter-fill green" data-w="80"></div></div><span class="meter-val">80</span></div>
+        <div class="verdict">Emirati pazarına erişim + Meydan Hotel/yarış pisti premium algı. Matcha Meydan başarısı talebi doğruluyor.</div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;" class="reveal-stagger">
+      <div class="region-card warning">
+        <h3>Al Quoz Industrial</h3>
+        <div class="sub">Tavsiye Edilmez</div>
+        <div class="meter-row"><span class="label">Demografi Yoğunluğu</span><div class="meter-bar"><div class="meter-fill red" data-w="40"></div></div><span class="meter-val">40</span></div>
+        <div class="meter-row"><span class="label">Mevcut Rekabet</span><div class="meter-bar"><div class="meter-fill red" data-w="95"></div></div><span class="meter-val">95</span></div>
+        <div class="meter-row"><span class="label">Kira Erişilebilirliği</span><div class="meter-bar"><div class="meter-fill" data-w="65"></div></div><span class="meter-val">65</span></div>
+        <div class="meter-row"><span class="label">ROI Potansiyeli</span><div class="meter-bar"><div class="meter-fill red" data-w="30"></div></div><span class="meter-val">30</span></div>
+        <div class="verdict">Doymuş (13+ tesis). Fiyat savaşı. Yeni marka konumlandırması neredeyse imkânsız.</div>
+      </div>
+
+      <div class="region-card">
+        <h3>Marina / Business Bay</h3>
+        <div class="sub">Sadece Premium Konseptle</div>
+        <div class="meter-row"><span class="label">Demografi Yoğunluğu</span><div class="meter-bar"><div class="meter-fill green" data-w="98"></div></div><span class="meter-val">98</span></div>
+        <div class="meter-row"><span class="label">Mevcut Rekabet</span><div class="meter-bar"><div class="meter-fill" data-w="55"></div></div><span class="meter-val">55</span></div>
+        <div class="meter-row"><span class="label">Kira Erişilebilirliği</span><div class="meter-bar"><div class="meter-fill red" data-w="15"></div></div><span class="meter-val">15</span></div>
+        <div class="meter-row"><span class="label">ROI Potansiyeli</span><div class="meter-bar"><div class="meter-fill" data-w="55"></div></div><span class="meter-val">55</span></div>
+        <div class="verdict">Kira 2,5M+ AED. Yalnızca rooftop premium butik (3 kort) modeli sürdürülebilir. ROI 5+ yıl.</div>
+      </div>
+
+      <div class="region-card">
+        <h3>Mirdif / Al Warqa</h3>
+        <div class="sub">Niche Aile Fırsatı</div>
+        <div class="meter-row"><span class="label">Demografi Yoğunluğu</span><div class="meter-bar"><div class="meter-fill green" data-w="70"></div></div><span class="meter-val">70</span></div>
+        <div class="meter-row"><span class="label">Mevcut Rekabet</span><div class="meter-bar"><div class="meter-fill green" data-w="15"></div></div><span class="meter-val">15</span></div>
+        <div class="meter-row"><span class="label">Kira Erişilebilirliği</span><div class="meter-bar"><div class="meter-fill green" data-w="85"></div></div><span class="meter-val">85</span></div>
+        <div class="meter-row"><span class="label">ROI Potansiyeli</span><div class="meter-bar"><div class="meter-fill" data-w="70"></div></div><span class="meter-val">70</span></div>
+        <div class="verdict">Çok düşük rekabet. Çocuklu aileler. Aile odaklı kulüp konsepti için fırsat.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">· · ·</div>
+
+<!-- ============ 5. MALİYET ============ -->
+<section id="maliyet">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-num">05 · Maliyet</div>
+      <div class="section-title-block">
+        <h2>Sermaye <em>disiplini</em>, başarının %50'si.</h2>
+        <p class="lede">
+          4-kort indoor + cafe + wellness için tahmini başlangıç 5–6 milyon AED. Operasyonel breakeven 18–24 ay,
+          ROI 3–4 yıl. Yıllık ciro Yıl 3'te 5,5-6M AED; EBITDA marjı %28-32.
+        </p>
+      </div>
+    </div>
+
+    <div class="cost-section reveal">
+      <div class="cost-block">
+        <h3>Kurulum (CapEx)</h3>
+        <div class="cost-sub">Bir defalık · 5,5M AED ortalama</div>
+        <div class="cost-total" data-count="5.5">0<span class="currency">M AED</span></div>
+        <div class="cost-sub" style="margin-top: 4px;">≈ 1,5M USD · 58,8M TL</div>
+        <ul class="cost-list">
+          <li><span class="name">Alan kirası (yıllık peşin)</span><span class="val">0,9–1,5M AED</span></li>
+          <li><span class="name">Tadilat + altyapı</span><span class="val">0,6–1,0M AED</span></li>
+          <li><span class="name">4 indoor kort (premium)</span><span class="val">0,6–1,0M AED</span></li>
+          <li><span class="name">HVAC sistemi</span><span class="val">350–600k AED</span></li>
+          <li><span class="name">Cafe + wellness build-out</span><span class="val">450–850k AED</span></li>
+          <li><span class="name">Lisans + onaylar (DET + DSC)</span><span class="val">45–95k AED</span></li>
+          <li><span class="name">Pazarlama + launch</span><span class="val">200–400k AED</span></li>
+          <li><span class="name">Yazılım + mobilya + kontingens</span><span class="val">550–1,1M AED</span></li>
+        </ul>
+      </div>
+
+      <div class="cost-block">
+        <h3>Yıllık Operasyon (OpEx)</h3>
+        <div class="cost-sub">Yinelenen · ~4,4M AED</div>
+        <div class="cost-total" data-count="4.4">0<span class="currency">M AED</span></div>
+        <div class="cost-sub" style="margin-top: 4px;">≈ 1,2M USD · 47,6M TL</div>
+        <ul class="cost-list">
+          <li><span class="name">Kira</span><span class="val">1,2M AED</span></li>
+          <li><span class="name">Personel (16 kişi)</span><span class="val">1,56M AED</span></li>
+          <li><span class="name">Elektrik (klima ağırlıklı)</span><span class="val">600k AED</span></li>
+          <li><span class="name">Su + telekom + yazılım</span><span class="val">230k AED</span></li>
+          <li><span class="name">Bakım + sigorta</span><span class="val">180k AED</span></li>
+          <li><span class="name">Pazarlama (sürekli)</span><span class="val">250k AED</span></li>
+          <li><span class="name">Cafe işletme</span><span class="val">300k AED</span></li>
+          <li><span class="name">Diğer (lisans, idari)</span><span class="val">125k AED</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-title-block reveal" style="margin: 80px 0 40px;">
+      <h2 style="font-size: clamp(28px, 4vw, 44px);">3 Yıllık <em>ROI</em> Projeksiyonu</h2>
+    </div>
+
+    <div class="timeline-grid reveal-stagger">
+      <div class="timeline-card yr1">
+        <div class="yr-label">Yıl 1 · Rampup</div>
+        <div class="yr-title">Açılış &<br>Üye Edinme</div>
+        <div class="yr-metric"><span class="k">Doluluk</span><span class="v">42%</span></div>
+        <div class="yr-metric"><span class="k">Yıllık Ciro</span><span class="v">2,8–3,2M AED</span></div>
+        <div class="yr-metric"><span class="k">EBITDA</span><span class="v neg">Negatif</span></div>
+        <div class="yr-metric"><span class="k">Net Sonuç</span><span class="v neg">−200 ila −500k AED</span></div>
+        <div class="yr-metric"><span class="k">Üye Sayısı</span><span class="v">100–150</span></div>
+      </div>
+
+      <div class="timeline-card yr2">
+        <div class="yr-label">Yıl 2 · Olgunlaşma</div>
+        <div class="yr-title">İlk Turnuva,<br>Lig Lansmanı</div>
+        <div class="yr-metric"><span class="k">Doluluk</span><span class="v">55%</span></div>
+        <div class="yr-metric"><span class="k">Yıllık Ciro</span><span class="v">4,1–4,5M AED</span></div>
+        <div class="yr-metric"><span class="k">EBITDA</span><span class="v pos">+18–22%</span></div>
+        <div class="yr-metric"><span class="k">Net Sonuç</span><span class="v pos">+400 ila +800k AED</span></div>
+        <div class="yr-metric"><span class="k">Üye Sayısı</span><span class="v">250–300</span></div>
+      </div>
+
+      <div class="timeline-card yr3">
+        <div class="yr-label">Yıl 3 · Hedef</div>
+        <div class="yr-title">Tam Operasyon,<br>Faz 2 Değerlendirme</div>
+        <div class="yr-metric"><span class="k">Doluluk</span><span class="v">65%</span></div>
+        <div class="yr-metric"><span class="k">Yıllık Ciro</span><span class="v">5,5–6,0M AED</span></div>
+        <div class="yr-metric"><span class="k">EBITDA</span><span class="v pos">+28–32%</span></div>
+        <div class="yr-metric"><span class="k">Net Sonuç</span><span class="v pos">+1,2–1,5M AED</span></div>
+        <div class="yr-metric"><span class="k">Üye Sayısı</span><span class="v">350+</span></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 32px; font-family: var(--mono); font-size: 12px; color: var(--text-3); letter-spacing: 0.05em;">
+      → Operasyonel breakeven: Ay 18–24 · Tam ROI: 3–4 yıl (gerçekçi senaryo)
+    </div>
+  </div>
+</section>
+
+<div class="divider">· · ·</div>
+
+<!-- ============ 6. RİSK ============ -->
+<section id="risk">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-num">06 · Risk</div>
+      <div class="section-title-block">
+        <h2>Riskler <em>yönetilebilir</em>, ama gerçek.</h2>
+        <p class="lede">
+          Doygunluk, yaz sezonu düşüşü, personel turnover ve İsveç balonu tetikte. Her riske spesifik mitigation stratejisi var.
+        </p>
+      </div>
+    </div>
+
+    <div class="risk-grid reveal">
+      <div class="risk-cell">
+        <span class="risk-level high">Yüksek</span>
+        <h4>Pazar Doygunluğu / Fiyat Erozyonu</h4>
+        <p>Al Quoz dışı bölgelerde 2-3 yıl içinde 50+ yeni kort açılması muhtemel. Redline tarzı agresif fiyatlandırma (70 AED/saat off-peak indoor) marj sıkıştırıcı.</p>
+        <div class="mitigation">
+          <strong>Önlem</strong>
+          Saf kort kiralama değil; deneyim ekonomisi (cafe + wellness + topluluk + turnuva + akademi) odaklı pozisyonlama. Üyelik tabanını ilk 6 ay agresif inşa et.
+        </div>
+      </div>
+
+      <div class="risk-cell">
+        <span class="risk-level high">Yüksek</span>
+        <h4>Yaz Düşüşü (May–Eyl)</h4>
+        <p>Outdoor doluluğu %20'lere düşer (40-48°C). Klima maliyetleri zirve yapar.</p>
+        <div class="mitigation">
+          <strong>Önlem</strong>
+          %100 indoor zorunlu. Bu sezon "yaz lig"/akademi yoğun kampanyaları. Klima maliyetlerini fiyata aktaran sezonsal fiyatlandırma.
+        </div>
+      </div>
+
+      <div class="risk-cell">
+        <span class="risk-level med">Orta</span>
+        <h4>Personel Turnover</h4>
+        <p>Koç ve cafe personeli için tipik turnover %30/yıl. Yetenekli koç bulmak ve elde tutmak zor.</p>
+        <div class="mitigation">
+          <strong>Önlem</strong>
+          Komisyon tabanlı koç ödemesi (private ders gelirinden %40-50). Accommodation desteği. Junior koç akademisi.
+        </div>
+      </div>
+
+      <div class="risk-cell">
+        <span class="risk-level low">Düşük-Orta</span>
+        <h4>Trend Kalıcılığı</h4>
+        <p>İsveç örneği geçerli (90 şirket iflas, ~€500M kayıp). Ancak Dubai'nin avantajları: iklim outdoor sporları kısıtlıyor, ekspat yenilenmesi sürekli, hükümet 2033'e dek destekliyor.</p>
+        <div class="mitigation">
+          <strong>Önlem</strong>
+          Konsolidasyon olacak (zayıf kulüpler kapanır). Premium konum + güçlü konsept + üyelik tabanı dirençli. 5-10 yıl perspektifinde padel kalıcı.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">· · ·</div>
+
+<!-- ============ 7. YOL HARİTASI ============ -->
+<section id="yolharitasi">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-num">07 · Yol Haritası</div>
+      <div class="section-title-block">
+        <h2><em>Üç yıllık</em> uygulama planı.</h2>
+        <p class="lede">
+          Lokasyon analizinden faz 2 değerlendirmesine, ayın detayında bir yürütme rehberi.
+        </p>
+      </div>
+    </div>
+
+    <div class="roadmap reveal">
+      <div class="roadmap-item">
+        <div class="road-time">Ay 0–3</div>
+        <div class="road-title">Keşif & Hazırlık</div>
+        <div class="road-desc">
+          Dubai fizibilite ziyareti. Playtomic veri analizi. 5-7 lokasyon shortlist (Dubai Hills, JVC, Meydan).
+          PRO ve UAE muhasebe firması ile sözleşme. Lisans başvuruları (DET + DSC + Civil Defense).
+          Mimari proje hazırlığı. Mondo/Padel Galis/Portico Sport tedarikçi quote'ları.
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="road-time">Ay 4–9</div>
+        <div class="road-title">İnşaat & Kurulum</div>
+        <div class="road-desc">
+          Tadilat + kort kurulumu (4-6 hafta). HVAC kurulumu. Marka kimliği oluşturma. Pre-launch pazarlama kampanyası.
+          Ekip işe alımı (GM, koçlar, resepsiyon, cafe). Playtomic entegrasyonu. Soft launch (corporate partnerlik turnuvası).
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="road-time">Ay 10–12 · Yıl 1</div>
+        <div class="road-title">Resmi Açılış</div>
+        <div class="road-desc">
+          Açılış Ekim-Kasım'da (Dubai Fitness Challenge sezonu). İlk 100 üye edinme kampanyası.
+          Hedef ciro: 2,8-3,2M AED. EBITDA breakeven veya hafif negatif. Sosyal medya momentumu, influencer partnerlikleri.
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="road-time">Yıl 2 · Olgunlaşma</div>
+        <div class="road-title">Topluluk & Turnuva</div>
+        <div class="road-desc">
+          Üyelikleri 250-300'e büyütme. İlk büyük turnuva (FIP Bronze adaylığı). Kadın liglerinin kurumsallaşması.
+          Junior academy lansmanı. Hedef ciro: 4,1-4,5M AED. EBITDA %18-22.
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="road-time">Yıl 3 · Olgun Operasyon</div>
+        <div class="road-title">Faz 2 Değerlendirmesi</div>
+        <div class="road-desc">
+          Hedef ciro 5,5-6M AED. EBITDA %28-32. Operasyonel breakeven aşıldı. Kümülatif yatırım geri dönüşü %60-75.
+          Faz 2 değerlendirmesi: Abu Dhabi/Sharjah ikinci lokasyon mu, yoksa Türkiye'ye franchise/lisans modeli mi?
+        </div>
+      </div>
+
+      <div class="roadmap-item">
+        <div class="road-time">Yıl 4–5 · Çıkış / Ölçek</div>
+        <div class="road-title">ROI Tamamlanır</div>
+        <div class="road-desc">
+          ROI ~3,5-4,5 yılda tamamlanır. Sermaye geri döner. Marka değeri 8-15M AED bandında.
+          Ölçek veya çıkış kararı (private equity, stratejik satış).
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KARAR ============ -->
+<section class="final" id="karar">
+  <div class="container">
+    <div class="final-stamp reveal">EVET<span class="comma">,</span><br>koşullu.</div>
+    <p class="final-sub reveal">
+      Doğru bölge, doğru konsept, doğru sermaye yapısı — üçü birlikte sağlandığında
+      Dubai padel pazarı bir Türk yatırımcı için yüksek getirili ama disiplin gerektiren bir fırsat.
+    </p>
+
+    <div class="conditions">
+      <div class="cond-block yes reveal">
+        <h4>Yatırım Sinyalleri</h4>
+        <ul>
+          <li>Minimum 5M AED özkaynak + 18 aylık operasyonel reserve hazır</li>
+          <li>Konum Al Quoz dışı (Dubai Hills, JVC, Meydan)</li>
+          <li>Deneyimli yerel GM istihdam edildi</li>
+          <li>Indoor karma sosyal kulüp konsepti benimsendi</li>
+          <li>Playtomic entegrasyonu kuruldu</li>
+          <li>1.500m yarıçapında 5'ten az padel tesisi var</li>
+          <li>En az 1 stratejik partner (otel/wellness markası) bağlandı</li>
+        </ul>
+      </div>
+
+      <div class="cond-block no reveal">
+        <h4>Durdur Sinyalleri</h4>
+        <ul>
+          <li>Sadece outdoor kort planlanıyor</li>
+          <li>Toplam sermaye 4M AED altında</li>
+          <li>Konum sırf "ucuz kira" gerekçesiyle seçildi</li>
+          <li>Yerel istihdam veya yerel ortak yok</li>
+          <li>Yatırımcı uzaktan yönetmeyi planlıyor</li>
+          <li>Lokasyonda 300m mesafede 2+ kulüp var</li>
+          <li>DSC onay süreci 4 aydan uzun sürüyor</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div>
+      <h5>Rapor</h5>
+      <p style="color: var(--text-2);">Dubai'de Padel Tenisi Yatırımı · Fizibilite Raporu</p>
+      <p>Mayıs 2026 verileriyle hazırlandı.</p>
+      <p>Türk yatırımcı perspektifiyle, 4-kortlu indoor sosyal kulüp konsepti için.</p>
+    </div>
+    <div>
+      <h5>Bölümler</h5>
+      <p><a href="#pazar" style="color: var(--text-2);">Pazar Trendi</a></p>
+      <p><a href="#rekabet" style="color: var(--text-2);">Rekabet</a></p>
+      <p><a href="#demografi" style="color: var(--text-2);">Demografi</a></p>
+      <p><a href="#bolge" style="color: var(--text-2);">Bölge</a></p>
+      <p><a href="#maliyet" style="color: var(--text-2);">Maliyet</a></p>
+      <p><a href="#karar" style="color: var(--text-2);">Karar</a></p>
+    </div>
+    <div>
+      <h5>Kaynaklar</h5>
+      <p style="color: var(--text-2);">FIP World Padel Report 2025</p>
+      <p>Playtomic Global Padel Report 2025</p>
+      <p>Dubai Sports Sector Strategic Plan 2033</p>
+      <p>UAE Padel Association · Gulf News</p>
+      <p>Arabian Business · The National</p>
+      <p>Padelnomics · Padel Gameplan 2026</p>
+    </div>
+  </div>
+  <div class="container">
+    <p class="footer-disclaimer">
+      Bu rapor genel pazar verisi ve tahminlere dayanır; bireysel yatırım kararı için profesyonel danışmanlık alınması önerilir.
+      Doluluk projeksiyonları sektör ortalamasıdır; gerçek sonuç pazarlama gücü, GM kalitesi ve makro ekonomik koşullara bağlıdır.
+      Kira piyasası ve regülasyonlar hızla değişmektedir; 12 ay içinde lokasyon bağlanmazsa CapEx hesabı tekrar yapılmalıdır.
+    </p>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+
+  // Intersection observer for reveals
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        // Trigger counter on stat reveal
+        if (entry.target.classList.contains('stats-grid')) {
+          startCounters(entry.target);
+        }
+        if (entry.target.id === 'bars' || entry.target.closest('.chart-card')) {
+          animateBars();
+        }
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+
+  // Bar chart animation
+  let barsAnimated = false;
+  function animateBars() {
+    if (barsAnimated) return;
+    barsAnimated = true;
+    const maxHeight = 200; // px
+    document.querySelectorAll('#bars .bar-group').forEach((g, i) => {
+      const pct = parseFloat(g.dataset.pct);
+      const h = (pct / 100) * maxHeight;
+      const bar = g.querySelector('.bar');
+      setTimeout(() => {
+        bar.style.height = h + 'px';
+      }, i * 120);
+    });
+  }
+
+  // Stats counter
+  function animateCount(el) {
+    const target = parseFloat(el.dataset.count);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const startTime = performance.now();
+    const isDecimal = target % 1 !== 0;
+
+    function tick(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+      const value = target * eased;
+      const display = isDecimal ? value.toFixed(1) : Math.floor(value);
+
+      const unitSpan = el.querySelector('.unit') || el.querySelector('.currency');
+      if (unitSpan) {
+        el.firstChild.nodeValue = display + suffix;
+      } else {
+        el.textContent = display + suffix;
+      }
+
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  function startCounters(scope) {
+    scope.querySelectorAll('[data-count]').forEach(el => animateCount(el));
+  }
+
+  // Also init cost block counters when they come in view
+  const costIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('[data-count]').forEach(el => animateCount(el));
+        costIO.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.cost-block').forEach(el => costIO.observe(el));
+
+  // Meter animation
+  const meterIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.meter-fill').forEach((el, i) => {
+          const w = el.dataset.w;
+          setTimeout(() => { el.style.width = w + '%'; }, i * 80);
+        });
+        meterIO.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.region-card').forEach(el => meterIO.observe(el));
+
+  // Donut animation
+  document.querySelectorAll('.donut-arc').forEach(arc => {
+    const final = arc.getAttribute('stroke-dasharray');
+    arc.setAttribute('stroke-dasharray', '0 100');
+    const donutIO = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setTimeout(() => { arc.style.transition = 'stroke-dasharray 1.4s cubic-bezier(0.16,1,0.3,1)'; arc.setAttribute('stroke-dasharray', final); }, 200);
+          donutIO.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    donutIO.observe(arc.closest('.donut-wrap'));
+  });
+</script>
+
+</body>
+</html>
