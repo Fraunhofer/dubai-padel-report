@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Dubai'de Padel Tenisi Yatırımı - Tam Rapor Metni | Mayıs 2026" />
+<title>Tam Rapor · Dubai Padel Fizibilite Raporu 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0d0b;
+    --bg-2: #0f1311;
+    --surface: #141a16;
+    --line: #232a25;
+    --line-2: #2d362f;
+    --text: #f0ebe1;
+    --text-2: #b9b3a4;
+    --text-3: #7a7568;
+    --gold: #d4a574;
+    --green: #4ade80;
+    --red: #ef4444;
+    --amber: #f59e0b;
+    --display: 'Bricolage Grotesque', serif;
+    --body: 'Source Serif 4', Georgia, serif;
+    --sans: 'Manrope', system-ui, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body);
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  }
+
+  ::selection { background: var(--gold); color: var(--bg); }
+
+  /* ============ NAV ============ */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    padding: 18px 0; z-index: 100;
+    background: rgba(10, 13, 11, 0.85);
+    backdrop-filter: blur(14px) saturate(120%);
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .container {
+    max-width: 1200px; margin: 0 auto; padding: 0 24px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .logo {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.02em;
+    display: flex; align-items: center; gap: 10px;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .logo-mark {
+    width: 26px; height: 26px;
+    border: 1.5px solid var(--gold);
+    border-radius: 50%;
+    position: relative;
+  }
+  .logo-mark::before {
+    content: ''; position: absolute;
+    top: 50%; left: 20%; width: 60%; height: 1px;
+    background: var(--gold);
+    transform: rotate(-30deg);
+  }
+  .logo-mark::after {
+    content: ''; position: absolute;
+    width: 4px; height: 4px; background: var(--green);
+    border-radius: 50%; top: 4px; right: 4px;
+  }
+  .nav-actions { display: flex; gap: 12px; align-items: center; font-family: var(--sans); }
+  .nav-link {
+    color: var(--text-2); text-decoration: none;
+    font-size: 13px; font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  .nav-link:hover { color: var(--gold); background: var(--surface); }
+  .nav-cta {
+    color: var(--bg);
+    background: var(--gold);
+    text-decoration: none;
+    font-size: 12px; font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: var(--sans);
+    transition: all 0.2s;
+  }
+  .nav-cta:hover { background: var(--text); }
+
+  /* ============ LAYOUT ============ */
+  .page {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 120px 24px 80px;
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+  }
+  @media (max-width: 960px) { .page { grid-template-columns: 1fr; padding-top: 100px; } }
+
+  /* ============ SIDEBAR TOC ============ */
+  aside.toc {
+    position: sticky;
+    top: 100px;
+    align-self: start;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding-right: 12px;
+  }
+  @media (max-width: 960px) {
+    aside.toc {
+      position: static;
+      max-height: none;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  aside.toc h3 {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  .toc-list { list-style: none; font-family: var(--sans); }
+  .toc-list li { margin-bottom: 2px; }
+  .toc-list a {
+    color: var(--text-2);
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 7px 10px;
+    display: block;
+    border-left: 1px solid var(--line);
+    transition: all 0.2s;
+  }
+  .toc-list a:hover {
+    color: var(--gold);
+    border-left-color: var(--gold);
+    background: rgba(212, 165, 116, 0.04);
+  }
+  .toc-list a.active {
+    color: var(--gold);
+    border-left-color: var(--gold);
+    background: rgba(212, 165, 116, 0.06);
+  }
+  /* TOC scrollbar */
+  aside.toc::-webkit-scrollbar { width: 4px; }
+  aside.toc::-webkit-scrollbar-track { background: transparent; }
+  aside.toc::-webkit-scrollbar-thumb { background: var(--line-2); border-radius: 2px; }
+
+  /* ============ CONTENT ============ */
+  main.content { max-width: 760px; }
+
+  .doc-header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 40px;
+    margin-bottom: 56px;
+  }
+  .doc-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 24px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .doc-eyebrow::before {
+    content: ''; width: 30px; height: 1px; background: var(--gold);
+  }
+  h1.doc-title {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(36px, 6vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+  }
+  h1.doc-title em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 300;
+  }
+  .doc-meta {
+    display: flex; gap: 32px; flex-wrap: wrap;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  .doc-meta strong { color: var(--text-2); font-weight: 500; }
+
+  /* ============ DOWNLOAD STRIP ============ */
+  .download-strip {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1px; background: var(--line);
+    border: 1px solid var(--line);
+    margin: 40px 0 60px;
+  }
+  @media (max-width: 600px) { .download-strip { grid-template-columns: 1fr; } }
+  .download-cell {
+    background: var(--bg);
+    padding: 24px 28px;
+    transition: background 0.2s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+  }
+  .download-cell:hover { background: var(--surface); }
+  .download-cell::after {
+    content: '↓';
+    position: absolute;
+    top: 24px; right: 24px;
+    font-family: var(--sans);
+    font-size: 20px;
+    color: var(--gold);
+    transition: transform 0.2s;
+  }
+  .download-cell:hover::after { transform: translateY(2px); }
+  .download-cell .lbl {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-3);
+    margin-bottom: 6px;
+  }
+  .download-cell .name {
+    font-family: var(--display);
+    font-size: 18px;
+    color: var(--text);
+    font-weight: 500;
+  }
+  .download-cell .desc {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--text-2);
+    margin-top: 4px;
+  }
+
+  /* ============ TYPOGRAPHY ============ */
+  h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(28px, 4vw, 38px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin: 80px 0 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 100px;
+  }
+  h2 em { font-style: italic; color: var(--gold); font-weight: 300; }
+  h2:first-of-type { border-top: none; padding-top: 0; margin-top: 60px; }
+
+  h3 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 22px;
+    margin: 40px 0 14px;
+    color: var(--text);
+    scroll-margin-top: 100px;
+    letter-spacing: -0.01em;
+  }
+  h4 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 15px;
+    margin: 30px 0 10px;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  p { margin-bottom: 20px; color: var(--text-2); }
+  p strong { color: var(--text); font-weight: 600; }
+  p em { color: var(--text); font-style: italic; }
+
+  ul, ol { margin: 16px 0 24px 28px; }
+  li {
+    margin-bottom: 10px;
+    color: var(--text-2);
+    line-height: 1.65;
+  }
+  li::marker { color: var(--gold); }
+  li strong { color: var(--text); font-weight: 600; }
+
+  a { color: var(--gold); text-decoration: underline; text-decoration-color: rgba(212, 165, 116, 0.3); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--gold); }
+
+  blockquote {
+    border-left: 2px solid var(--gold);
+    padding: 8px 24px;
+    margin: 28px 0;
+    color: var(--text);
+    font-style: italic;
+    background: rgba(212, 165, 116, 0.04);
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: var(--line);
+    margin: 60px 0;
+  }
+
+  /* ============ HIGHLIGHT BLOCKS ============ */
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    padding: 24px 28px;
+    margin: 30px 0;
+    font-family: var(--sans);
+    font-size: 15px;
+  }
+  .callout.green { border-left-color: var(--green); }
+  .callout.red { border-left-color: var(--red); }
+  .callout.amber { border-left-color: var(--amber); }
+  .callout .callout-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .callout.green .callout-label { color: var(--green); }
+  .callout.red .callout-label { color: var(--red); }
+  .callout.amber .callout-label { color: var(--amber); }
+  .callout p:last-child { margin-bottom: 0; }
+  .callout p { color: var(--text); }
+
+  /* ============ TABLES ============ */
+  .table-wrap {
+    overflow-x: auto;
+    margin: 28px 0;
+    border: 1px solid var(--line);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--sans);
+    font-size: 13px;
+    min-width: 600px;
+  }
+  thead th {
+    text-align: left;
+    padding: 14px 16px;
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    font-weight: 500;
+  }
+  tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+    color: var(--text-2);
+    vertical-align: top;
+  }
+  tbody tr:hover td { background: var(--surface); color: var(--text); }
+  tbody tr:last-child td { border-bottom: none; }
+  td strong { color: var(--text); font-weight: 600; }
+
+  /* ============ DEFINITION LISTS ============ */
+  .stat-row {
+    display: flex; justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-family: var(--sans);
+    font-size: 14px;
+  }
+  .stat-row .label { color: var(--text-2); }
+  .stat-row .value { font-family: var(--mono); color: var(--text); font-weight: 500; }
+  .stat-row.total {
+    border-top: 2px solid var(--gold);
+    border-bottom: 2px solid var(--gold);
+    padding: 18px 0;
+    margin-top: 10px;
+  }
+  .stat-row.total .label, .stat-row.total .value {
+    color: var(--gold); font-weight: 600; font-size: 15px;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    border-top: 1px solid var(--line);
+    background: var(--bg-2);
+    padding: 60px 24px;
+    margin-top: 100px;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--text-3);
+    text-align: center;
+  }
+  footer .container { max-width: 760px; margin: 0 auto; }
+  footer p { margin-bottom: 8px; line-height: 1.6; color: var(--text-3); }
+  footer a { color: var(--text-2); }
+
+  /* Print styles */
+  @media print {
+    nav, aside.toc, footer, .download-strip { display: none !important; }
+    body { background: white; color: #111; font-size: 11pt; }
+    .page { display: block; padding: 20pt; max-width: none; }
+    h1, h2, h3, h4, p, li, td { color: #111; }
+    h2, h3 { page-break-after: avoid; }
+    a { color: #111; }
+  }
+
+  /* Reveal animation */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.7s, transform 0.7s; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark"></div>
+      <span>Padel Dubai · 2026</span>
+    </a>
+    <div class="nav-actions">
+      <a href="index.html" class="nav-link">← Özet</a>
+      <a href="rapor.md" class="nav-cta" download>Markdown İndir</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+
+  <aside class="toc">
+    <h3>İçindekiler</h3>
+    <ul class="toc-list">
+      <li><a href="#tldr">Yönetici Özeti (TL;DR)</a></li>
+      <li><a href="#bulgular">Anahtar Bulgular</a></li>
+      <li><a href="#pazar">1. Pazar Trendi ve Büyüme</a></li>
+      <li><a href="#rekabet">2. Rekabet Analizi</a></li>
+      <li><a href="#demografi">3. Müşteri Demografisi</a></li>
+      <li><a href="#bolge">4. Bölge Önerisi</a></li>
+      <li><a href="#maliyet">5. Maliyet Analizi</a></li>
+      <li><a href="#yasal">6. Yasal Gereklilikler</a></li>
+      <li><a href="#risk">7. Risk Analizi</a></li>
+      <li><a href="#karar">8. Final Karar / Tavsiye</a></li>
+      <li><a href="#tavsiyeler">Karar Tavsiyeleri</a></li>
+      <li><a href="#notlar">Önemli Notlar</a></li>
+      <li><a href="#kaynaklar">Kaynaklar</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+
+    <header class="doc-header">
+      <div class="doc-eyebrow">Fizibilite Raporu · Tam Metin</div>
+      <h1 class="doc-title">Dubai'de Padel Tenisi <em>Yatırımı</em></h1>
+      <div class="doc-meta">
+        <span><strong>Tarih:</strong> Mayıs 2026</span>
+        <span><strong>Konsept:</strong> 4-kortlu indoor sosyal kulüp</span>
+        <span><strong>Perspektif:</strong> Türk yatırımcı</span>
+      </div>
+    </header>
+
+    <div class="download-strip">
+      <a href="rapor.md" class="download-cell" download>
+        <div class="lbl">Markdown</div>
+        <div class="name">rapor.md</div>
+        <div class="desc">Ham metin, tüm tablolarla · ~22 KB</div>
+      </a>
+      <a href="index.html" class="download-cell">
+        <div class="lbl">Animasyonlu</div>
+        <div class="name">Özet Sayfası</div>
+        <div class="desc">Grafikler, tablolar, infografikler</div>
+      </a>
+    </div>
+
+    <h2 id="tldr">Yönetici Özeti <em>(TL;DR)</em></h2>
+
+    <div class="callout green">
+      <div class="callout-label">✓ Sonuç</div>
+      <p><strong>Evet, yapılır — ama dikkatli ve hızlı yapılmalı.</strong> Dubai padel pazarı hâlâ büyüyor; UAE Padel Association Genel Sekreteri Saeed Al Marri'nin Gulf News'a verdiği demece göre BAE'de oyun son üç yıldır yıllık yaklaşık %40-50 oranında büyüyor. Padel ayrıca Sheikh Mansoor bin Mohammed bin Rashid Al Maktoum'un Kasım 2025'te lanse ettiği Dubai Sports Sector Strategic Plan 2033'te "Emerging Sports" kategorisinde 17 öncelikli sporun ilkleri arasında.</p>
+    </div>
+
+    <p>Buna rağmen Al Quoz başta olmak üzere bazı bölgeler doygunlaşma sinyalleri veriyor. 4-kortlu indoor sosyal kulüp için tahmini başlangıç sermayesi <strong>5–6 milyon AED</strong> (≈ 1,36–1,64 milyon USD / 53,5–64,2 milyon TL) ve operasyonel break-even 18–24 ay, tam ROI 3–4 yıl.</p>
+
+    <p><strong>Doğru bölge tercihi belirleyici:</strong> Al Quoz artık doymuş (13+ tesis) ve fiyat rekabeti sert; Dubai Hills/Arabian Ranches, JVC/JVT ve Meydan/Nad Al Sheba arası "ekspat ağırlıklı orta-üst gelir, halen az kort" üçgeni en yüksek ROI potansiyelini sunuyor. Marina/Downtown gibi prestij bölgeleri kira maliyetleri nedeniyle sadece "premium butik kulüp" konseptiyle anlamlı.</p>
+
+    <p><strong>Türkiye ile karşılaştırma:</strong> Dubai pazarı Türkiye'den ~10–15 kat daha büyük ve ~2 kat daha yüksek fiyatlı; kurulum maliyetleri de 2,5–3 kat yüksek; ancak müşteri başına gelir ve yıllık doluluk Türkiye'yi açık ara geçiyor. Türk yatırımcı için Dubai, yüksek sermaye gerektiren ama hızlı dönüş veren bir pazar.</p>
+
+    <h2 id="bulgular">Anahtar Bulgular</h2>
+
+    <ol>
+      <li><strong>Pazar büyüklüğü ve trend:</strong> BAE genelinde 950+ kort / 320+ tesis; Dubai tek başına 400+ kort. UAEPA: BAE'de oyuncu sayısı son üç yılda yıllık %40-50 büyüyor. Ali Al Arif (World Padel Academy CEO): "Bence Padel kalıcı — sonsuza dek. Geçen yıl BAE'de en çok oynanan spor, futboldan bile fazla."</li>
+
+      <li><strong>Hükümet desteği güçlü:</strong> Dubai Sports Sector Strategic Plan 2033 padel'i "Emerging Sports" kategorisinde resmi olarak listeledi. 2033 hedefi: spor sektörünün Dubai GSYİH katkısını 10,17 → 18,3 milyar AED'ye çıkarmak ve aktif spor yapan nüfusu 1,6 → 2,6 milyona taşımak.</li>
+
+      <li><strong>Rekabet yoğun ama heterojen:</strong> Al Quoz 13+ tesisle "padel başkenti"; Dubai Hills, Meydan, JVC, Mirdif gibi premium banliyölerde kort/nüfus oranı hâlâ düşük. Saf "saat kiralama" modeli artık savunulamaz.</li>
+
+      <li><strong>Doygunluk uyarısı meşru:</strong> İsveç padel balonu doğrudan kıyaslama referansı: 100+ tesis kapandı, 90 şirket iflas başvurusu yaptı, Triton-destekli We Are Padel 63 kulüpten 50'sini kapattı; sektör kaynakları toplam yok edilen sermayeyi ~500 milyon Euro olarak tahmin ediyor.</li>
+
+      <li><strong>Maliyetler yüksek, fiyatlar yüksek:</strong> Median peak saatlik kort kirası 247 AED, off-peak 190 AED. Tesis bazlı toplam yatırım (4 kort indoor + cafe): 5–6 milyon AED. Yıllık ciro Yıl 3'te ~5,6 milyon AED; EBITDA marjı %28-32.</li>
+
+      <li><strong>Yaz sorunu kritik:</strong> Mayıs–Eylül arası dış ortam sıcaklığı 40–48°C, outdoor doluluk %15–25'e düşüyor. Indoor + klima zorunlu.</li>
+
+      <li><strong>Müşteri profili:</strong> ~%65 ekspat / %20 Emirati (yıllık %20 büyüyor) / %15 diğer; ~%60 erkek, ~%40 kadın; yaş 26–50 ağırlıklı.</li>
+    </ol>
+
+    <h2 id="pazar">1. Pazar Trendi ve Büyüme</h2>
+
+    <h3>Küresel bağlam</h3>
+    <p>Uluslararası Padel Federasyonu (FIP) Başkanı Luigi Carraro'nun 29 Kasım 2025'te Acapulco'daki 35. Genel Kurul'da sunduğu <strong>FIP World Padel Report 2025</strong>'e göre:</p>
+    <ul>
+      <li>Dünyada <strong>77.300 kort</strong> (yıllık %15,2 büyüme; sadece 2025'te 14.355 yeni kort)</li>
+      <li><strong>24.600+ kulüp</strong> (%16,1 büyüme)</li>
+      <li><strong>35 milyondan fazla oyuncu</strong></li>
+      <li>150 ülkede federasyona kayıtlı oyuncu sayısında %42 artış</li>
+    </ul>
+    <p>Playtomic ve PwC Strategy&'in 2025 Global Padel Report'una göre 2024'te küresel kulüp sayısı %26, kort sayısı %17 büyüyerek sırasıyla 15.933 ve 50.436'ya ulaştı; UAE, ABD, Suudi Arabistan, BK, Portekiz, Hindistan ve Endonezya en hızlı büyüyen pazarlar.</p>
+
+    <h3>BAE / Dubai</h3>
+    <ul>
+      <li><strong>Kort sayısı:</strong> Dubai 400+ (Al Quoz 13+ tesis), BAE toplamı 950+ kort/320+ tesis. UAE Padel Association: BAE'de 150+ kulüp, 600+ tescilli kort.</li>
+      <li><strong>Büyüme:</strong> UAEPA Genel Sekreteri Saeed Al Marri'ye göre BAE'de oyuncu sayısı son üç yıldır yıllık yaklaşık %40-50 oranında büyüyor. Bu rakam FIP'in küresel %15-26 büyüme oranlarının çok üzerinde.</li>
+      <li><strong>Oyuncu sayısı:</strong> FIP 2023 yılında BAE'de 1.900 lisanslı oyuncu raporladı; tahmini toplam aktif oyuncu kitlesi 100.000+.</li>
+      <li><strong>Premier Padel Dubai</strong> (Hamdan Sports Complex, Kasım 2025 & Kasım 2026) ve <strong>DP World'ün FIP World Padel Championships'a sponsorluğu</strong> üst düzey ekosistem yatırımının göstergesi.</li>
+    </ul>
+
+    <div class="callout red">
+      <div class="callout-label">⚠ Doygunluk Riski (Önemli Karşıt Ses)</div>
+      <p><strong>CityGreen Sports analizi (Aralık 2025):</strong> "UAE = bölgenin en olgun ve doymuş pazarı; küçük outdoor kulüpler kapanıyor, sadece büyük indoor operatörler büyüyor."</p>
+      <p><strong>İsveç balonu referansı:</strong> European Business Magazine'in 9 Mayıs 2026 raporuna göre 100'den fazla tesis kapandı, 90 padel şirketi iflas başvurusu yaptı, Triton-destekli We Are Padel 63 İsveç kulübünden 50'sini kapattı; sektör kaynakları toplam yok edilen sermayeyi ~500 milyon Euro olarak tahmin ediyor.</p>
+    </div>
+
+    <h3>Türkiye karşılaştırması</h3>
+    <ul>
+      <li>Padel sporu, 11 Şubat 2025'te Gençlik ve Spor Bakanlığı kararı ile Türkiye Tenis Federasyonu'na (TTF) bağlandı.</li>
+      <li>TTF–QNB Türkiye stratejik ortaklığı imzalandı (2025).</li>
+      <li>2025'te Türkiye'nin ilk tam kapsamlı <strong>FIP Bronze CUPRA Türkiye</strong> turnuvası Antalya Ali Bey Club'ta düzenlendi.</li>
+      <li>Türkiye'de tahmini ~15 kulüp ve ~30 kort (İstanbul ağırlıklı).</li>
+      <li><strong>İstanbul saatlik kort kirası:</strong> 1.500–4.000 TL (peak), ortalama 1.600 TL. İBB belediye tesisleri 800–1.000 TL.</li>
+      <li><strong>Karşılaştırma:</strong> Dubai peak fiyat 247 AED ≈ 2.640 TL; Dubai İstanbul premium kortların ~1,5–2 katı, belediye kortlarının ~3 katı fiyatlı.</li>
+    </ul>
+
+    <h2 id="rekabet">2. Rekabet Analizi</h2>
+
+    <p>Başlıca operatörler — Mayıs 2026 itibarıyla 20+ büyük operatör pazarda. Aşağıdaki tablo temsili niteliktedir.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Operatör</th>
+            <th>Konum / Kort</th>
+            <th>Tip</th>
+            <th>90 dk fiyat</th>
+            <th>Konsept</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Just Padel</strong></td><td>Mina Rashid, Kite Beach, NAS, Brighton, Abu Dhabi · 6+ lokasyon</td><td>Karma</td><td>180–360 AED</td><td>Akademi + turnuva, ölçek lideri</td></tr>
+          <tr><td><strong>Padel Pro UAE</strong></td><td>Jumeirah Park, Al Quoz, One Central · 9 kulüp</td><td>Karma</td><td>260–360 AED</td><td>Boon Coffee + FILA shop</td></tr>
+          <tr><td><strong>Central Padel</strong></td><td>Al Quoz · 7 indoor</td><td>Indoor</td><td>460–615 AED</td><td>WPT-sertifikalı Centre Court, premium</td></tr>
+          <tr><td><strong>Matcha Club</strong></td><td>Al Quoz + Meydan · 12 outdoor</td><td>Outdoor</td><td>400 AED</td><td>NETTE restoran, yoga, pilates</td></tr>
+          <tr><td><strong>The Lob</strong></td><td>Al Quoz · 6 indoor</td><td>Indoor</td><td>350–450 AED</td><td>Chef Silvena + infrared sauna</td></tr>
+          <tr><td><strong>Padel One</strong></td><td>DIP · 6 FIP-circuit indoor</td><td>Indoor</td><td>Üyelik odaklı</td><td>Sauna + ice bath + yoga, 3 katman üyelik</td></tr>
+          <tr><td><strong>Padel Edition</strong></td><td>Al Quoz 1 · indoor</td><td>Indoor</td><td>80–360 AED</td><td>Recovery zone, infrared + ice bath</td></tr>
+          <tr><td><strong>Casa Padel</strong></td><td>Dubai Police Academy / Ripe Market</td><td>Indoor</td><td>360 AED</td><td>Topluluk + market vibe</td></tr>
+          <tr><td><strong>Padelx</strong></td><td>JLT Cluster I · 2 yüzen kort</td><td>Outdoor</td><td>200–225 AED</td><td>Dubai'nin tek floating court'u</td></tr>
+          <tr><td><strong>Padel Point</strong></td><td>Al Quoz 3 · 5 indoor</td><td>Indoor</td><td>270 AED</td><td>UAE'nin ilk public indoor</td></tr>
+          <tr><td><strong>WPA</strong></td><td>Al Quoz, SIRO One Za'abeel, Hamdan SC</td><td>Karma</td><td>—</td><td>FIP-onaylı koçlar</td></tr>
+          <tr><td><strong>Viya Padel</strong></td><td>Emirates GC, Dubai Creek, JGE · 20+ outdoor</td><td>Outdoor</td><td>360–380 AED</td><td>Dubai Golf grubu, yıllık üyelik</td></tr>
+          <tr><td><strong>Smash Padel</strong></td><td>Palm Jumeirah, Jebel Ali · indoor</td><td>Indoor</td><td>200–360 AED</td><td>Gym kombinasyonu</td></tr>
+          <tr><td><strong>Redline Sports</strong></td><td>Al Quoz, Al Barsha (indoor), Greens</td><td>Karma</td><td>70 AED/saat off-peak</td><td>En agresif fiyat; 400 AED/ay unlimited</td></tr>
+          <tr><td><strong>La Cantine SC</strong></td><td>Bluewaters · 6 outdoor (sahil)</td><td>Outdoor</td><td>200+ AED</td><td>Wellness café + retail butik</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Çıkarımlar</h3>
+    <ul>
+      <li>Saf "saatlik kort kiralama" iş modeli artık savunulamaz; kazananlar <strong>cafe + wellness + akademi + turnuva + topluluk</strong> modelini benimseyen kulüpler.</li>
+      <li><strong>Indoor zorunlu</strong> (yaz nedeniyle); outdoor sadece "premium konum/manzara" varsa anlamlı.</li>
+      <li><strong>Üyelik gelir akışı</strong> olmayan kulüpler nakit akışı dalgalanmasında zayıf.</li>
+      <li><strong>Yakın dönem açılışlar:</strong> SIRO One Za'abeel × WPA (Şubat 2026), La Cantine SC Bluewaters, Padel One DIP, Wellfit Circle Mall JVC, Redline Al Barsha.</li>
+    </ul>
+
+    <h2 id="demografi">3. Müşteri Demografisi</h2>
+
+    <ul>
+      <li><strong>Yaş:</strong> Çekirdek 26–50 (toplam oyuncuların %70'i 25+).</li>
+      <li><strong>Cinsiyet:</strong> ~%60 erkek / ~%40 kadın. Dubai'de kadın katılımı küresel ortalamanın üzerinde.</li>
+      <li><strong>Milliyet:</strong> ~%65 ekspat (Avrupa, Latin Amerika ağırlıklı), %20 Emirati (yıllık %20 büyüme), %15 diğer.</li>
+      <li><strong>Sektör:</strong> Finance (DIFC), tech, hukuk, danışmanlık, real estate broker, yöneticiler, havayolu mürettebatı, ünlüler.</li>
+      <li><strong>Coğrafi yoğunluk:</strong> Dubai Marina/JBR, Business Bay, Downtown/DIFC, Dubai Hills, Arabian Ranches, Palm Jumeirah, JVC, Al Barsha.</li>
+      <li><strong>Oynama saatleri:</strong> Hafta içi 17:00–23:00 (büyük çoğunluk), sabah 6:00–8:00, öğle 12:00–14:00. Hafta sonu tüm gün dolu.</li>
+      <li><strong>Motivasyon:</strong> %60+ sosyal+fitness, %25 rekabetçi/lig, %15 corporate team-building & ailesel.</li>
+    </ul>
+
+    <h2 id="bolge">4. Bölge Önerisi</h2>
+
+    <p>Aşağıdaki tablo bölgeleri "kort sayısı vs. hedef demografi yoğunluğu" rasyosuna göre değerlendirir.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Bölge</th>
+            <th>Kira (yıllık AED)</th>
+            <th>Mevcut rekabet</th>
+            <th>Hedef demografi</th>
+            <th>Tavsiye</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Al Quoz Industrial 1-4</strong></td><td>600.000–1.500.000</td><td>Doymuş (13+ tesis)</td><td>Orta</td><td>❌ Tavsiye edilmez</td></tr>
+          <tr><td><strong>Dubai Marina / JBR</strong></td><td>2.500.000+</td><td>Orta</td><td>Çok yüksek</td><td>⚠ Sadece premium butik</td></tr>
+          <tr><td><strong>Business Bay / DIFC</strong></td><td>2.000.000+</td><td>Orta</td><td>Çok yüksek</td><td>⚠ ROI uzun (5+ yıl)</td></tr>
+          <tr><td><strong>JVC / JVT</strong></td><td>600.000–1.000.000</td><td>Düşük</td><td>Yüksek</td><td>✅ En güçlü öneri 1</td></tr>
+          <tr><td><strong>Dubai Hills / Arabian Ranches</strong></td><td>1.200.000–2.000.000</td><td>Düşük-orta</td><td>Çok yüksek</td><td>✅ En güçlü öneri 2</td></tr>
+          <tr><td><strong>Dubai Sports City</strong></td><td>800.000–1.400.000</td><td>Orta</td><td>Orta</td><td>✅ Akademi odaklı niş</td></tr>
+          <tr><td><strong>Meydan / Nad Al Sheba</strong></td><td>1.000.000–1.800.000</td><td>Düşük</td><td>Yüksek</td><td>✅ En güçlü öneri 3</td></tr>
+          <tr><td><strong>Mirdif / Al Warqa</strong></td><td>500.000–900.000</td><td>Çok düşük</td><td>Yüksek</td><td>✅ Aile odaklı fırsat</td></tr>
+          <tr><td><strong>Palm Jumeirah</strong></td><td>3.000.000+</td><td>Orta</td><td>Yüksek (nitelikli)</td><td>⚠ Otel/resort ortaklığı</td></tr>
+          <tr><td><strong>Al Barsha</strong></td><td>800.000–1.300.000</td><td>Orta</td><td>Yüksek</td><td>✅ Indoor odaklı</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout green">
+      <div class="callout-label">✓ Sonuç — En Uygun 3 Bölge</div>
+      <p><strong>1. Dubai Hills / Arabian Ranches</strong> (öncelikli tercih): Üst-orta gelirli ekspat aile yoğunluğu en yüksek; mevcut rekabet sınırlı; community retail alanları padel + cafe + yoga konseptine ideal.</p>
+      <p><strong>2. JVC / JVT:</strong> Hızlı büyüyen genç ekspat nüfusu, Wellfit dışında ciddi rekabet yok, kira makul. Circle Mall ya da Al Khail Road üzeri görünür konum.</p>
+      <p><strong>3. Meydan / Nad Al Sheba:</strong> Emirati pazarına erişim ve Meydan Hotel/Yarış pisti ekosisteminin getirdiği premium algı.</p>
+    </div>
+
+    <h2 id="maliyet">5. Maliyet Analizi</h2>
+    <p><strong>Senaryo:</strong> 4-kort indoor sosyal kulüp — Dubai Hills / JVC.</p>
+    <p><strong>Döviz kuru (Mayıs 2026 yaklaşık):</strong> 1 USD = 3,67 AED; 1 AED ≈ 10,7 TL; 1 USD ≈ 39 TL.</p>
+
+    <h3>A. KURULUM (CapEx)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Kalem</th><th>Düşük (AED)</th><th>Yüksek (AED)</th><th>Orta TL</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Alan kirası (yıllık peşin)</td><td>900.000</td><td>1.500.000</td><td>12.840.000</td></tr>
+          <tr><td>Tadilat & altyapı</td><td>600.000</td><td>1.000.000</td><td>8.560.000</td></tr>
+          <tr><td>Padel kort yapımı (4 indoor)</td><td>600.000</td><td>1.000.000</td><td>8.560.000</td></tr>
+          <tr><td>Klima/HVAC</td><td>350.000</td><td>600.000</td><td>5.080.000</td></tr>
+          <tr><td>Aydınlatma (LED FIP)</td><td>80.000</td><td>150.000</td><td>1.230.000</td></tr>
+          <tr><td>Cafe build-out</td><td>250.000</td><td>500.000</td><td>4.000.000</td></tr>
+          <tr><td>Soyunma odası, lobi</td><td>200.000</td><td>350.000</td><td>2.940.000</td></tr>
+          <tr><td>Pro shop, ofis, depo</td><td>80.000</td><td>150.000</td><td>1.230.000</td></tr>
+          <tr><td>Lisans + onaylar (DET + DSC)</td><td>45.000</td><td>95.000</td><td>750.000</td></tr>
+          <tr><td>DEWA + Civil Defense</td><td>40.000</td><td>85.000</td><td>670.000</td></tr>
+          <tr><td>Yazılım (Playtomic, CRM, POS)</td><td>50.000</td><td>100.000</td><td>800.000</td></tr>
+          <tr><td>Pazarlama / launch</td><td>200.000</td><td>400.000</td><td>3.200.000</td></tr>
+          <tr><td>Mobilya + dekor</td><td>150.000</td><td>300.000</td><td>2.400.000</td></tr>
+          <tr><td>Hukuki + PRO + muhasebe</td><td>30.000</td><td>60.000</td><td>480.000</td></tr>
+          <tr><td>Kontingens (~%10)</td><td>350.000</td><td>600.000</td><td>5.080.000</td></tr>
+          <tr><td><strong>TOPLAM CapEx</strong></td><td><strong>3.925.000</strong></td><td><strong>6.890.000</strong></td><td><strong>~57,6M TL</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Indoor vs Outdoor:</strong> Outdoor 4 kort + shaded structure ~2,2–3 milyon AED daha ucuz, ancak yaz aylarında doluluk %15-25'e düştüğünden Dubai'de outdoor yatırım uzun vadede ROI'yi %30-40 düşürür. <strong>Indoor zorunlu.</strong></p>
+
+    <h3>B. OPERASYONEL GİDERLER (yıllık, OpEx)</h3>
+    <div class="stat-row"><span class="label">Kira</span><span class="value">1.200.000 AED</span></div>
+    <div class="stat-row"><span class="label">Personel (16 kişi)</span><span class="value">1.560.000 AED</span></div>
+    <div class="stat-row"><span class="label">Klima/elektrik</span><span class="value">600.000 AED</span></div>
+    <div class="stat-row"><span class="label">Su + sewerage + housing</span><span class="value">180.000 AED</span></div>
+    <div class="stat-row"><span class="label">Internet + telekom + yazılım</span><span class="value">50.000 AED</span></div>
+    <div class="stat-row"><span class="label">Bakım</span><span class="value">100.000 AED</span></div>
+    <div class="stat-row"><span class="label">Sigorta</span><span class="value">80.000 AED</span></div>
+    <div class="stat-row"><span class="label">Pazarlama (sürekli)</span><span class="value">250.000 AED</span></div>
+    <div class="stat-row"><span class="label">Lisans yenileme</span><span class="value">25.000 AED</span></div>
+    <div class="stat-row"><span class="label">Cafe işletme</span><span class="value">300.000 AED</span></div>
+    <div class="stat-row"><span class="label">Diğer</span><span class="value">100.000 AED</span></div>
+    <div class="stat-row total"><span class="label">TOPLAM OpEx (yıllık)</span><span class="value">~4.445.000 AED</span></div>
+
+    <h3>C. GELİR PROJEKSİYONU</h3>
+    <p><strong>Fiyatlandırma:</strong> Peak 280 AED / 90 dk · Off-peak 180 AED / 90 dk · Üyelik 600–1.500 AED/ay</p>
+    <p><strong>Doluluk:</strong> Yıl 1: %42 · Yıl 2: %55 · Yıl 3: %65</p>
+
+    <h4>Yıllık gelir tahmini (Yıl 3, %65 doluluk)</h4>
+    <div class="stat-row"><span class="label">Kort kiralama</span><span class="value">2.700.000 AED</span></div>
+    <div class="stat-row"><span class="label">Akademi/koçluk</span><span class="value">750.000 AED</span></div>
+    <div class="stat-row"><span class="label">Üyelik (300 üye × ~900 AED/ay)</span><span class="value">700.000 AED</span></div>
+    <div class="stat-row"><span class="label">Cafe</span><span class="value">950.000 AED</span></div>
+    <div class="stat-row"><span class="label">Turnuva/etkinlik</span><span class="value">300.000 AED</span></div>
+    <div class="stat-row"><span class="label">Pro shop + ek</span><span class="value">250.000 AED</span></div>
+    <div class="stat-row total"><span class="label">TOPLAM Yıl 3 ciro</span><span class="value">~5.650.000 AED</span></div>
+
+    <h4>Net kar projeksiyonu</h4>
+    <ul>
+      <li><strong>Yıl 1:</strong> −200.000 ila −500.000 AED (rampup)</li>
+      <li><strong>Yıl 2:</strong> +400.000 ila +800.000 AED (EBITDA ~%18-22)</li>
+      <li><strong>Yıl 3:</strong> +1.200.000 ila +1.500.000 AED (EBITDA ~%28-32)</li>
+    </ul>
+
+    <div class="callout">
+      <div class="callout-label">⏱ Zamanlama</div>
+      <p><strong>Break-even:</strong> Ay 18–24 (operasyonel)<br><strong>ROI:</strong> 3–4 yıl (gerçekçi senaryo)</p>
+    </div>
+
+    <h2 id="yasal">6. Yasal/Bürokratik Gereklilikler</h2>
+
+    <ul>
+      <li><strong>Mainland vs Free Zone:</strong> Padel kulübü B2C tesis olduğundan <strong>mainland (DET) lisansı zorunlu</strong>.</li>
+      <li><strong>100% yabancı mülkiyet:</strong> Haziran 2021'den itibaren mainland'de spor tesisleri için 100% yabancı sahiplik <strong>mümkün</strong>. Local Service Agent gerekli değil.</li>
+      <li><strong>Gerekli lisanslar:</strong>
+        <ol>
+          <li>DET Trade License (Sports Services + Restaurant kombi) — 12.000–40.000 AED/yıl</li>
+          <li>Dubai Sports Council (DSC) onayı zorunlu (Law No. 13 of 2024)</li>
+          <li>Dubai Municipality (bina, F&B hijyen)</li>
+          <li>Civil Defense (yangın, tahliye)</li>
+          <li>Ejari tenancy kaydı</li>
+          <li>UBO kaydı</li>
+        </ol>
+      </li>
+      <li><strong>Kurulum süresi:</strong> 6–9 ay (kort kurulumunun kendisi 4–6 hafta)</li>
+      <li><strong>Vize kotaları:</strong> 15–30 yatırımcı/çalışan vizesi</li>
+      <li><strong>Vergi:</strong> UAE Corporate Tax %9 (taxable income > 375.000 AED); VAT %5</li>
+    </ul>
+
+    <h2 id="risk">7. Risk Analizi</h2>
+
+    <div class="callout red">
+      <div class="callout-label">⚠ Yüksek Risk · Doygunluk / Fiyat Erozyonu</div>
+      <p>Al Quoz dışı bölgelerde 2-3 yıl içinde 50+ yeni kort açılması muhtemel. Redline tarzı agresif fiyatlandırma marj sıkıştırıcı.</p>
+      <p><strong>Önlem:</strong> Deneyim ekonomisi (cafe, wellness, topluluk, turnuva, akademi) odaklı pozisyonlama; üyelik tabanını ilk 6 ay agresif inşa etme.</p>
+    </div>
+
+    <div class="callout red">
+      <div class="callout-label">⚠ Yüksek Risk · Yaz Düşüşü (May–Eyl)</div>
+      <p>Outdoor doluluğu %20'lere düşer. Klima maliyetleri zirve yapar.</p>
+      <p><strong>Önlem:</strong> %100 indoor zorunlu. Yaz lig/akademi kampanyaları, sezonsal fiyatlandırma.</p>
+    </div>
+
+    <div class="callout amber">
+      <div class="callout-label">⚠ Orta Risk · Personel Turnover</div>
+      <p>Koç ve cafe personeli için tipik turnover %30/yıl.</p>
+      <p><strong>Önlem:</strong> Komisyon tabanlı koç ödemesi (private ders gelirinden %40-50). Accommodation desteği.</p>
+    </div>
+
+    <div class="callout amber">
+      <div class="callout-label">⚠ Düşük-Orta Risk · Trend Kalıcılığı</div>
+      <p>İsveç örneği geçerli ancak Dubai'nin avantajları: iklim outdoor sporları yıl boyu kısıtlıyor, ekspat yenilenmesi sürekli, hükümet 2033'e dek destekliyor.</p>
+      <p><strong>Önlem:</strong> Konsolidasyon olacak. Premium konum + güçlü konsept + üyelik tabanı dirençli. 5-10 yıl perspektifinde padel kalıcı.</p>
+    </div>
+
+    <h2 id="karar">8. Final Karar / Tavsiye</h2>
+
+    <div class="callout green">
+      <div class="callout-label">✓ Karar</div>
+      <p><strong>"Bu iş yapılmalı mı?" — EVET, ancak koşullu olarak.</strong></p>
+    </div>
+
+    <h3>Yapılmalı KOŞULLAR (hepsi sağlanmalı)</h3>
+    <ul>
+      <li>Minimum 5 milyon AED özkaynak + 18 aylık operasyonel reserve hazır</li>
+      <li>Konum Al Quoz dışı (Dubai Hills, JVC, Meydan, Mirdif)</li>
+      <li>Deneyimli yerel General Manager istihdam edilmeli</li>
+      <li>Konsept: Indoor karma sosyal kulüp (kort + cafe + akademi + wellness)</li>
+      <li>Playtomic entegrasyonu</li>
+    </ul>
+
+    <h3>Yapılmamalı KOŞULLAR</h3>
+    <ul>
+      <li>Sadece outdoor kort planlanıyorsa</li>
+      <li>Toplam sermaye 4 milyon AED altıysa</li>
+      <li>Konum sırf "ucuz kira" gerekçesiyle uzak/erişimsizse</li>
+      <li>Operatör yerel istihdamı veya yerel ortak kurmuyorsa</li>
+    </ul>
+
+    <h3>Önerilen Ölçek ve Konsept</h3>
+    <ul>
+      <li><strong>Faz 1 (Yıl 1-2):</strong> 4 indoor kort + 100 m² cafe + 80 m² wellness + 150 m² lounge/co-working</li>
+      <li><strong>Toplam alan:</strong> ~1.800-2.200 m²</li>
+      <li><strong>Konum:</strong> Dubai Hills community retail veya JVC Circle Mall yakını veya Meydan podium</li>
+      <li><strong>Marka pozisyonu:</strong> Premium sosyal kulüp — Türk kahvesi + Anadolu sağlıklı mutfak farklılaştırıcı olabilir</li>
+    </ul>
+
+    <h3>Başlangıç Sermayesi Aralığı</h3>
+    <ul>
+      <li><strong>Konservatif:</strong> 4.000.000 AED (1,09 milyon USD / 42,8 milyon TL)</li>
+      <li><strong>Önerilen (gerçekçi):</strong> 5.000.000–6.000.000 AED (1,36–1,64 milyon USD / 53,5–64,2 milyon TL)</li>
+      <li><strong>Premium butik:</strong> 7.500.000+ AED (Palm/Downtown için)</li>
+    </ul>
+
+    <h3>İlk 3 Yıl Yol Haritası</h3>
+    <p><strong>Ay 0-3:</strong> Konum analizi, lokasyon kontratı, lisans başvuruları, mimari proje. PRO seçimi, hukuki yapı.</p>
+    <p><strong>Ay 4-9:</strong> Tadilat + kort kurulumu, HVAC, marka kimliği, pre-launch pazarlama, ekip işe alımı, Playtomic entegrasyonu, soft launch.</p>
+    <p><strong>Ay 10-12 (Yıl 1 sonu):</strong> Resmi açılış (Ekim-Kasım, Dubai Fitness Challenge sezonu). İlk 100 üye edinme kampanyası. Yıl 1 ciro: 2,8–3,2 milyon AED.</p>
+    <p><strong>Yıl 2:</strong> Üyeliklerin 250-300'e büyütülmesi, ilk büyük turnuva (FIP Bronze adaylığı), junior academy lansmanı. Ciro: 4,1–4,5 milyon AED.</p>
+    <p><strong>Yıl 3:</strong> Olgunlaşma. Hedef ciro 5,5–6 milyon AED. EBITDA %28-32. Operasyonel breakeven aşıldı.</p>
+    <p><strong>Yıl 4-5:</strong> ROI tamamlanır (~3,5-4,5 yıl), sermaye geri döner, marka değeri 8-15 milyon AED bandına çıkar.</p>
+
+    <h2 id="tavsiyeler">Karar Tavsiyeleri</h2>
+
+    <ol>
+      <li><strong>İlk 30 gün:</strong> Dubai'ye fizibilite ziyareti, Playtomic verisi satın alımı; Dubai Hills / JVC / Meydan'da 5–7 lokasyon shortlist.</li>
+      <li><strong>30-90 gün:</strong> PRO ve UAE muhasebe firması ile sözleşme. DSC ön görüşmeleri. Mondo / Padel Galis / NX Padel / Portico Sport quote'ları (kort başına 150-250k AED).</li>
+      <li><strong>Karar eşikleri:</strong>
+        <ul>
+          <li><strong>Yatırımı durdur</strong> sinyalleri: Lokasyonda &lt;300m mesafede 2+ kurulu kulüp varsa; kira &gt; 350 AED/sqft/yıl ise; DSC onay süreci 4 aydan uzun sürüyorsa; özkaynak &lt; 4 milyon AED ise.</li>
+          <li><strong>İlerle</strong> sinyalleri: Lokasyonda 1.500 m yarıçapında &lt;5 padel tesisi varsa ve 25.000+ üst-orta gelir hanesi varsa.</li>
+        </ul>
+      </li>
+      <li><strong>Yapısal:</strong> Bir UAE'li veya bölge deneyimli ortak ile 70/30 veya 80/20 yapı kur.</li>
+      <li><strong>Türkiye-Dubai sinerjisi:</strong> Türkiye'de hazırlık tesisi → Dubai'ye eğitilmiş koç/personel akışı. Türk üreticisi Mediterra Padel veya WePadel kortları ~20-25% maliyet avantajı sağlayabilir.</li>
+    </ol>
+
+    <h2 id="notlar">Önemli Notlar</h2>
+
+    <ul>
+      <li>Doluluk projeksiyonları piyasa ortalaması varsayımıdır. %42'lik Yıl 1 hedefi başarılamazsa break-even 30 aya uzayabilir.</li>
+      <li>Kira piyasası 2025-2026'da hızla yükseldi (Dubai retail kiraları %15-25 arttı).</li>
+      <li>DEWA ticari elektrik tarifesi 0,38 AED/kWh + yakıt sürşarjı. 4-kort indoor klima yükü ay başına 50-65k AED'ye ulaşabilir.</li>
+      <li>2033 Stratejik Plan vaadi politik bir hedeftir; gerçekleşmesi 8 yıl sürer.</li>
+      <li>Türkiye padel istatistikleri henüz olgun değil (TTF padel'i sadece 11 Şubat 2025'te devraldı).</li>
+      <li><strong>Yatırımcı sahasında olmadan bu işi açmasın.</strong> Dubai padel sektörünün başarı örüntüsü tamamen "yerel topluluk ilişkileri" ve "GM'in saha hakimiyeti" üzerinden işliyor.</li>
+    </ul>
+
+    <h2 id="kaynaklar">Kaynaklar</h2>
+
+    <ul>
+      <li>FIP World Padel Report 2025 (Padel International Federation)</li>
+      <li>Playtomic Global Padel Report 2025 (PwC Strategy&)</li>
+      <li>Dubai Sports Sector Strategic Plan 2033 (Dubai Media Office, Kasım 2025)</li>
+      <li>UAE Padel Association (Gulf News röportajları)</li>
+      <li>Arabian Business · The National · Khaleej Times</li>
+      <li>European Business Magazine (İsveç padel analizi, Mayıs 2026)</li>
+      <li>CityGreen Sports Industry Report 2025</li>
+      <li>Padelnomics (Mart 2026) · Padel Gameplan (Nisan 2026)</li>
+      <li>Padel Creations (Business Plan for Padel)</li>
+      <li>Inlex-Partners (Dubai Padel Setup Guide 2025)</li>
+      <li>Time Out Dubai · What's On · Cosmopolitan ME</li>
+      <li>Redline Sports Club (Dubai Padel Courts Guide 2026)</li>
+      <li>Türkiye Tenis Federasyonu (TTF) resmi açıklamaları</li>
+      <li>Padyum, Kortrehberi, Meditopia (Türkiye padel)</li>
+    </ul>
+
+    <hr>
+
+    <p style="font-family: var(--mono); font-size: 12px; color: var(--text-3); text-align: center;">
+      Rapor tarihi: Mayıs 2026 · Konsept: 4-kortlu indoor karma sosyal kulüp
+    </p>
+
+  </main>
+</div>
+
+<footer>
+  <div class="container">
+    <p>Bu rapor genel pazar verisi ve tahminlere dayanır; bireysel yatırım kararı için profesyonel danışmanlık alınması önerilir.</p>
+    <p style="margin-top: 16px;">
+      <a href="index.html">← Özet sayfasına dön</a> · <a href="rapor.md" download>Markdown indir</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  // TOC active state
+  const sections = document.querySelectorAll('h2[id]');
+  const tocLinks = document.querySelectorAll('.toc-list a');
+
+  const tocObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        tocLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-100px 0px -60% 0px' });
+
+  sections.forEach(s => tocObserver.observe(s));
+</script>
+
+</body>
+</html>
